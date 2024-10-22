@@ -1,1284 +1,964 @@
-<html><head><base href="https://websim.storyteller.com/contos/">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha história, Nosso Mundo - Histórias Completas</title>
-    <style>
-        body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f0f8ff;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #ff69b4;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            text-shadow: 2px 2px #ff1493;
-        }
-        nav {
-            background-color: #ff1493;
-            padding: 1rem 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 1rem;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        #navUserName {
-            font-weight: normal;
-            font-style: italic;
-            margin-left: 5px;
-        }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .content-wrapper {
-            display: flex;
-            justify-content: space-between;
-            margin: 2rem auto;
-            max-width: 1200px;
-        }
-        .left-column {
-            width: 60%;
-        }
-        .right-column {
-            width: 35%;
-        }
-        #highlightedNews, #loginRegisterContainer {
-            margin-bottom: 2rem;
-        }
-        #highlightedNews {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        #highlightedNews h3 {
-            text-align: center;
-            color: #ff1493;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-        .news-carousel {
-            width: 100%;
-            overflow: hidden;
-        }
-        .news-slider {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-        .news-item {
-            flex: 0 0 100%;
-            padding: 0 15px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-        .news-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-        .news-item h4 {
-            color: #ff1493;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-        .news-item p {
-            margin-bottom: 15px;
-        }
-        .read-more {
-            display: inline-block;
-            background-color: #ff69b4;
-            color: #fff;
-            padding: 8px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .read-more:hover {
-            background-color: #ff1493;
-        }
-        .carousel-controls {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-        .prev-btn, .next-btn {
-            background-color: rgba(255, 105, 180, 0.7);
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .prev-btn:hover, .next-btn:hover {
-            background-color: rgba(255, 20, 147, 0.9);
-        }
-        .story-highlights {
-            background-color: #ffe4e1;
-            border-radius: 10px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .story-highlights h2 {
-            color: #ff1493;
-            font-size: 2rem;
-            margin-top: 0;
-            text-align: center;
-        }
-        .story-highlights ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .story-highlights li {
-            margin: 0.5rem;
-        }
-        .introduction {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .story {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .story h2 {
-            color: #ff1493;
-            font-size: 2rem;
-            margin-top: 0;
-        }
-        .story img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-        }
-        .moral {
-            font-style: italic;
-            color: #4b0082;
-            margin-top: 1rem;
-            font-weight: bold;
-        }
-        .interpretation-questions {
-            background-color: #e6f2ff;
-            border-radius: 10px;
-            padding: 1rem;
-            margin-top: 1rem;
-        }
-        .interpretation-questions h3 {
-            color: #ff1493;
-            margin-top: 0;
-        }
-        .interpretation-questions .question {
-            margin-bottom: 1rem;
-        }
-        .interpretation-questions .options {
-            display: flex;
-            flex-direction: column;
-            margin-left: 1rem;
-        }
-        .interpretation-questions label {
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-        }
-        .interpretation-questions input[type="radio"] {
-            margin-right: 0.5rem;
-        }
-        .interpretation-questions ol {
-            padding-left: 1.5rem;
-        }
-        .interpretation-questions li {
-            margin-bottom: 0.5rem;
-        }
-        .read-button {
-            background-color: #ff1493;
-            color: #fff;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .read-button:hover {
-            background-color: #ff69b4;
-        }
-        #loginForm, #registerForm {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        #registerForm {
-            display: none;
-        }
-        .form-group {
-            margin-bottom: 1rem;
-        }
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-        input[type="text"], input[type="password"], input[type="number"], select {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button[type="submit"], #showRegisterFormButton {
-            background-color: #ff1493;
-            color: #fff;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        button[type="submit"]:hover, #showRegisterFormButton:hover {
-            background-color: #ff69b4;
-        }
-        #userProfile {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        #userProfile h2 {
-            color: #ff1493;
-            font-size: 2rem;
-            margin-top: 0;
-        }
-        #userProfile ul {
-            list-style-type: none;
-            padding: 0;
-            display: none;
-        }
-        #userProfile li {
-            margin-bottom: 0.5rem;
-        }
-        #editProfileForm {
-            margin-top: 1rem;
-        }
-        #logoutButton {
-            background-color: #ff4500;
-            color: #fff;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        #logoutButton:hover {
-            background-color: #ff6347;
-        }
-        #adminPanel {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        #adminPanel h2 {
-            color: #ff1493;
-            font-size: 2rem;
-            margin-top: 0;
-        }
-        #adminPanel ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        #adminPanel li {
-            margin-bottom: 0.5rem;
-        }
-        .admin-button {
-            background-color: #4169e1;
-            color: #fff;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-            margin-right: 0.5rem;
-        }
-        .admin-button:hover {
-            background-color: #1e90ff;
-        }
-        footer {
-            background-color: #ff69b4;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            margin-top: 1rem;
-        }
-        .social-links a {
-            color: #fff;
-            font-size: 1.5rem;
-            margin: 0 0.5rem;
-            text-decoration: none;
-        }
-        #loginOverlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.7);
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #loginForm {
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            max-width: 400px;
-            width: 90%;
-        }
-        #loginForm h2 {
-            color: #ff1493;
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-        #loginForm .form-group {
-            margin-bottom: 1rem;
-        }
-        #loginForm label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
-        #loginForm input[type="text"],
-        #loginForm input[type="password"] {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        #loginForm button {
-            width: 100%;
-            padding: 0.75rem;
-            background-color: #ff1493;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 1rem;
-        }
-        #loginForm button:hover {
-            background-color: #ff69b4;
-        }
-        #showRegisterFormButton {
-            background-color: transparent;
-            color: #ff1493;
-            border: none;
-            cursor: pointer;
-            text-decoration: underline;
-            margin-top: 1rem;
-            display: block;
-            text-align: center;
-        }
-        #showRegisterFormButton:hover {
-            color: #ff69b4;
-        }
-        #closeLoginButton {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: transparent;
-            border: none;
-            color: #fff;
-            font-size: 24px;
-            cursor: pointer;
-        }
-        #storyModal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.4);
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 800px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        #modalTitle {
-            color: #ff1493;
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        #modalContent {
-            text-align: justify;
-            line-height: 1.6;
-        }
-        #modalContent p {
-            margin-bottom: 15px;
-        }
-    </style>
+<html><head><base href="https://websimstorage.com/comics/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Biblioteca de Histórias em Quadrinhos</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap');
+
+  body {
+    font-family: 'Comic Neue', cursive;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .login-btn {
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .login-btn:hover {
+    background-color: #ff4757;
+  }
+
+  .container {
+    flex: 1;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    overflow-y: auto;
+  }
+
+  h1 {
+    font-family: 'Bangers', cursive;
+    color: #ff6b6b;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px #feca57;
+  }
+
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .story-card {
+    background-color: #f7f1e3;
+    border: 2px solid #2d3436;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .story-card.read {
+    opacity: 0.7;
+    background-color: #e0e0e0;
+  }
+
+  .story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .story-title {
+    font-family: 'Bangers', cursive;
+    color: #4ecdc4;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+
+  .story-info {
+    font-size: 0.9em;
+    color: #636e72;
+  }
+
+  .comic-container {
+    display: none;
+  }
+
+  .scene {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .scene-title {
+    font-family: 'Bangers', cursive;
+    color: #4ecdc4;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .panel {
+    background-color: #f7f1e3;
+    border: 2px solid #2d3436;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .panel-description {
+    white-space: pre-wrap;
+  }
+
+  .dialogue {
+    margin-left: 20px;
+  }
+
+  .character {
+    font-weight: bold;
+    color: #6c5ce7;
+  }
+
+  .moral {
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    color: #e17055;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ffeaa7;
+    border-radius: 5px;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .nav-button {
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .nav-button:hover {
+    background-color: #ff4757;
+  }
+
+  .nav-button:disabled {
+    background-color: #b2bec3;
+    cursor: not-allowed;
+  }
+
+  .back-to-menu {
+    display: block;
+    margin: 20px auto;
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #4ecdc4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .back-to-menu:hover {
+    background-color: #45b7aa;
+  }
+
+  .exit-btn {
+    display: block;
+    margin: 20px auto;
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .exit-btn:hover {
+    background-color: #ff4757;
+  }
+
+  .edit-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+
+  .edit-form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .edit-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .edit-form button:hover {
+    background-color: #45a049;
+  }
+
+  .edit-form textarea {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .edit-form p {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #666;
+  }
+
+  .quiz {
+    background-color: #f0f8ff;
+    border: 1px solid #add8e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .quiz h3 {
+    font-family: 'Bangers', cursive;
+    color: #4ecdc4;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .question {
+    margin-bottom: 20px;
+  }
+
+  .question p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .question label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .quiz button {
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+
+  .quiz button:hover {
+    background-color: #ff4757;
+  }
+
+  .admin-panel {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none;
+  }
+
+  #story-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .quiz-question {
+    margin-bottom: 20px;
+  }
+
+  .quiz-question input,
+  .quiz-question textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  .admin-button {
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #4ecdc4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  .admin-button:hover {
+    background-color: #45b7aa;
+  }
+
+  .story-preview {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .story-preview h3 {
+    font-family: 'Bangers', cursive;
+    color: #4ecdc4;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .story-preview .story-info {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #666;
+  }
+
+  .story-preview .story-content {
+    background-color: #f7f1e3;
+    border: 2px solid #2d3436;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    font-family: 'Comic Neue', cursive;
+    line-height: 1.8;
+    text-align: justify;
+  }
+
+  .story-preview .quiz-section h4 {
+    font-family: 'Bangers', cursive;
+    color: #ff6b6b;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .story-preview .quiz-section .question {
+    background-color: #f0f8ff;
+    border: 1px solid #add8e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .story-preview .quiz-section .question p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .story-preview .quiz-section .question ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .story-preview .quiz-section .question li {
+    margin-bottom: 5px;
+  }
+
+  .story-preview .quiz-section .question li.correct-answer {
+    color: #4CAF50;
+    font-weight: bold;
+  }
+
+  .fullscreen-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #4ecdc4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .fullscreen-btn:hover {
+    background-color: #45b7aa;
+  }
+  
+</style>
 </head>
 <body>
-    <header>
-        <h1>Minha história, Nosso Mundo</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#" id="homeButton">Início</a></li>
-            <li><a href="#" id="storiesButton">Histórias</a></li>
-            <li><a href="#" id="profileButton">Perfil <span id="navUserName"></span></a></li>
-            <li><a href="#" id="chatButton">Chat</a></li>
-            <li><a href="#" id="loginButton">Login</a></li>
-        </ul>
-    </nav>
-    <div id="loginOverlay">
-        <button id="closeLoginButton">&times;</button>
-        <div id="loginForm">
-            <h2>Login</h2>
-            <form id="loginFormElement">
-                <div class="form-group">
-                    <label for="loginName">Nome:</label>
-                    <input type="text" id="loginName" required>
-                </div>
-                <div class="form-group">
-                    <label for="loginPassword">Senha:</label>
-                    <input type="password" id="loginPassword" required>
-                </div>
-                <button type="submit">Entrar</button>
-            </form>
-            <button id="showRegisterFormButton">Não tem uma conta? Cadastre-se</button>
-        </div>
+  <div id="login-overlay" class="overlay">
+    <div class="login-container">
+      <h2>Bem-vindo à Biblioteca de Histórias em Quadrinhos</h2>
+      <button id="reading-room-btn" class="login-btn">Sala de Leitura</button>
+      <button id="admin-btn" class="login-btn">Administrador</button>
     </div>
-    <main id="mainContent">
-        <div id="welcomeMessage" style="display: none;"></div>
-        <div class="content-wrapper">
-            <div class="left-column">
-                <div id="highlightedNews">
-                    <h3>Notícias em Destaque</h3>
-                    <div class="news-carousel">
-                        <div class="news-slider">
-                            <div class="news-item">
-                                <img src="https://picsum.photos/300/200?random=1" alt="Nova história adicionada" class="news-image">
-                                <h4>Nova história adicionada</h4>
-                                <p>"A Princesa e o Sapo" agora disponível para leitura!</p>
-                                <a href="#" class="read-more">Leia mais</a>
-                            </div>
-                            <div class="news-item">
-                                <img src="https://picsum.photos/300/200?random=2" alt="Concurso de desenho infantil" class="news-image">
-                                <h4>Concurso de desenho infantil</h4>
-                                <p>Participe até 30/06 e ganhe prêmios incríveis!</p>
-                                <a href="#" class="read-more">Saiba mais</a>
-                            </div>
-                            <div class="news-item">
-                                <img src="https://picsum.photos/300/200?random=3" alt="Evento de contação de histórias" class="news-image">
-                                <h4>Evento de contação de histórias</h4>
-                                <p>Junte-se a nós no próximo sábado para uma tarde mágica!</p>
-                                <a href="#" class="read-more">Detalhes do evento</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-controls">
-                        <button class="prev-btn">&lt;</button>
-                        <button class="next-btn">&gt;</button>
-                    </div>
-                </div>
-            </div>
-            <div class="right-column">
-                <div id="loginRegisterContainer"></div>
-            </div>
-        </div>
-        <div id="userProfile" style="display: none;">
-            <h2>Perfil do Usuário</h2>
-            <button id="toggleProfileInfo">Mostrar/Ocultar Informações do Perfil</button>
-            <ul id="profileInfo"></ul>
-            <form id="editProfileForm">
-                <h3>Editar Perfil</h3>
-                <div class="form-group">
-                    <label for="editName">Nome:</label>
-                    <input type="text" id="editName" required>
-                </div>
-                <div class="form-group">
-                    <label for="editAge">Idade:</label>
-                    <input type="number" id="editAge" required>
-                </div>
-                <div class="form-group">
-                    <label for="editGender">Sexo:</label>
-                    <select id="editGender" required>
-                        <option value="male">Masculino</option>
-                        <option value="female">Feminino</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="editContact">Contato (WhatsApp):</label>
-                    <input type="text" id="editContact" required>
-                </div>
-                <button type="submit">Salvar Alterações</button>
-            </form>
-            <button id="logoutButton">Sair</button>
-        </div>
-        <div id="adminPanel" style="display: none;">
-            <h2>Painel do Administrador</h2>
-            <ul id="userList"></ul>
-            <div id="userDetails"></div>
-            <div id="adminChatMessages"></div>
-            <div id="storyEditor" style="display: none;">
-                <h3>Editor de Histórias</h3>
-                <textarea id="storyContent" rows="10" cols="50"></textarea>
-                <button id="saveStoryButton" class="admin-button">Salvar História</button>
-            </div>
-        </div>
-        <div id="storyContainer" style="display: none;">
-        </div>
-        <div id="chatSection" style="display: none;">
-            <h2>Chat com Administrador</h2>
-            <div id="chatMessages"></div>
-            <form id="chatForm">
-                <input type="text" id="chatTitle" placeholder="Título da mensagem" required>
-                <textarea id="chatBody" placeholder="Corpo da mensagem" required></textarea>
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2023 Minha história, Nosso Mundo. Todos os direitos reservados.</p>
-        <div class="social-links">
-            <a href="https://facebook.com/minhahistorianossomundo" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://wa.me/message/ABCDEFGHIJKLM" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="mailto:contato@minhahistorianossomundo.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-    <script>
-        let users = JSON.parse(localStorage.getItem('users')) || [];
-        let currentUser = null;
-        const adminUsername = 'CWD';
-        const adminPassword = '6363';
+  </div>
+  <div class="container">
+    <h1>Biblioteca de Histórias em Quadrinhos</h1>
+    <div id="story-menu" class="menu"></div>
+    <div id="comic-container" class="comic-container">
+      <h2 id="comic-title"></h2>
+      <div id="comic-content"></div>
+      <button class="back-to-menu" onclick="showMenu()">Voltar ao Menu</button>
+    </div>
+    <button id="exit-btn" class="exit-btn" onclick="showLoginOverlay()">Sair</button>
+  </div>
+  <div id="admin-panel" class="admin-panel">
+    <h2>Painel de Administração</h2>
+    <select id="story-select"></select>
+    <div id="edit-form" class="edit-form">
+      <input type="text" id="edit-title" placeholder="Título">
+      <input type="number" id="edit-year" placeholder="Ano">
+      <input type="text" id="edit-author" placeholder="Autor">
+      <textarea id="edit-content" placeholder="Conteúdo"></textarea>
+      <div id="quiz-editor"></div>
+      <button onclick="saveStoryChanges()">Salvar Alterações</button>
+      <button onclick="previewStory()" class="admin-button">Visualizar História</button>
+    </div>
+    <button onclick="showMenu()" class="admin-button">Voltar ao Menu</button>
+    <div id="story-preview" class="story-preview"></div>
+  </div>
 
-        const stories = [
-            {
-                id: 1,
-                title: 'O Patinho Feio',
-                content: 'Era uma vez um patinho diferente dos seus irmãos. Ele era maior, mais desajeitado e tinha uma cor acinzentada, enquanto os outros eram amarelos e fofos. Por causa de sua aparência, ele era rejeitado e zombado pelos outros animais do celeiro. Triste e solitário, o patinho feio decidiu partir em busca de um lugar onde pudesse ser aceito. Durante sua jornada, enfrentou muitas dificuldades e o rigoroso inverno. Mas com a chegada da primavera, algo incrível aconteceu: o patinho feio se transformou em um belo cisne branco. Ele descobriu que nunca foi um pato, mas sim um filhote de cisne que nasceu no ninho errado. Agora, admirado por todos pela sua beleza, o cisne aprendeu que a verdadeira beleza vem de dentro e que ser diferente pode ser uma bênção.',
-                questions: [
-                    {
-                        question: 'Qual é a lição principal da história do Patinho Feio?',
-                        options: [
-                            'A aparência física é o mais importante',
-                            'Não devemos julgar os outros pela aparência',
-                            'Os patos são melhores que os cisnes',
-                            'É importante ser igual aos outros'
-                        ],
-                        correctAnswer: 1
-                    },
-                    {
-                        question: 'O que o patinho feio se tornou no final da história?',
-                        options: [
-                            'Um pato bonito',
-                            'Um cisne',
-                            'Uma galinha',
-                            'Continuou sendo um pato feio'
-                        ],
-                        correctAnswer: 1
-                    }
-                ]
-            },
-            {
-                id: 2,
-                title: 'Chapeuzinho Vermelho',
-                content: 'Era uma vez uma menina que usava um capuz vermelho, dado por sua avó. Um dia, sua mãe pediu que ela levasse uma cesta com comida para a avó doente. No caminho pela floresta, Chapeuzinho encontrou o Lobo Mau, que a enganou e chegou primeiro à casa da avó. O lobo engoliu a avó e se disfarçou com suas roupas. Quando Chapeuzinho chegou, estranhou a aparência da "avó", fazendo as famosas perguntas sobre os olhos, ouvidos e dentes grandes. O lobo então revelou-se e tentou comer Chapeuzinho, mas um caçador que passava por perto ouviu o barulho e salvou as duas. O lobo foi expulso da floresta, e Chapeuzinho aprendeu a importância de não falar com estranhos e seguir as orientações de sua mãe.',
-                questions: [
-                    {
-                        question: 'Qual é a lição principal da história de Chapeuzinho Vermelho?',
-                        options: [
-                            'Falar com estranhos pode ser perigoso',
-                            'Devemos sempre seguir os mandamentos dos pais',
-                            'Os lobos são sempre amigos',
-                            'As avós devem ter cuidado'
-                        ],
-                        correctAnswer: 0
-                    },
-                    {
-                        question: 'Quem salvou Chapeuzinho Vermelho e sua avó?',
-                        options: [
-                            'Um príncipe',
-                            'Um caçador',
-                            'Um viajante',
-                            'O Lobo Mau'
-                        ],
-                        correctAnswer: 1
-                    }
-                ]
-            },
-            {
-                id: 3,
-                title: 'Os Três Porquinhos',
-                content: 'Era uma vez três porquinhos irmãos que decidiram construir suas próprias casas. O primeiro, preguiçoso, fez uma casa de palha rapidamente. O segundo, um pouco mais esforçado, construiu uma casa de madeira. Já o terceiro, muito trabalhador, ergueu uma sólida casa de tijolos. Um dia, o Lobo Mau apareceu e soprou com força, derrubando a casa de palha. O primeiro porquinho correu para a casa do segundo. O lobo soprou novamente e destruiu a casa de madeira. Os dois porquinhos fugiram para a casa de tijolos do terceiro irmão. O Lobo Mau soprou e soprou, mas não conseguiu derrubar a casa forte. Frustrado, tentou entrar pela chaminé, mas caiu em um caldeirão de água fervente e fugiu, nunca mais voltando. Os porquinhos aprenderam a importância do trabalho duro e da precaução.',
-                questions: [
-                    {
-                        question: 'Qual é a principal lição da história dos três porquinhos?',
-                        options: [
-                            'O trabalho duro compensa',
-                            'Casas de palha são melhores',
-                            'É importante ter amigos',
-                            'O Lobo Mau era um bom personagem'
-                        ],
-                        correctAnswer: 0
-                    },
-                    {
-                        question: 'Qual casa foi destruída primeiro pelo Lobo?',
-                        options: [
-                            'Casa de tijolos',
-                            'Casa de madeira',
-                            'Casa de palha',
-                            'Nenhuma das anteriores'
-                        ],
-                        correctAnswer: 2
-                    }
-                ]
-            },
-            {
-                id: 4,
-                title: 'João e o Pé de Feijão',
-                content: 'Era uma vez um menino chamado João que vivia com sua mãe viúva. Um dia, ela mandou João vender sua única vaca para comprar comida. No caminho, João trocou a vaca por feijões mágicos. Sua mãe, furiosa, jogou os feijões pela janela. Na manhã seguinte, um enorme pé de feijão havia crescido até o céu. João subiu e encontrou um castelo nas nuvens, habitado por um gigante malvado. João descobriu que o gigante possuía uma galinha que punha ovos de ouro e uma harpa mágica, que pertenceram ao seu pai. Corajosamente, João conseguiu recuperar os tesouros, fugindo do gigante. Ao chegar em casa, cortou o pé de feijão, fazendo o gigante cair. Com a galinha e a harpa, João e sua mãe nunca mais passaram necessidades, vivendo felizes para sempre.',
-                questions: [
-                    {
-                        question: 'Qual era o produto que João recebeu pelos feijões mágicos?',
-                        options: [
-                            'Uma vaca',
-                            'Um ganso',
-                            'Um castelo',
-                            'Os feijões'
-                        ],
-                        correctAnswer: 3
-                    },
-                    {
-                        question: 'Qual era o prêmio que João encontrou no castelo?',
-                        options: [
-                            'Uma harpa mágica',
-                            'Um ovo de ouro',
-                            'Um gigante',
-                            'Uma princesa'
-                        ],
-                        correctAnswer: 0
-                    }
-                ]
-            },
-            {
-                id: 5,
-                title: 'A Bela Adormecida',
-                content: 'Em um reino distante, nasceu uma princesa chamada Aurora. Durante seu batizado, uma fada má lançou uma maldição: ao completar 16 anos, a princesa espetaria o dedo em uma roca e cairia em um sono profundo. Uma fada boa conseguiu amenizar a maldição: o sono duraria até que um beijo de amor verdadeiro a despertasse. O rei ordenou que todas as rocas do reino fossem queimadas. Aurora cresceu sem saber de seu destino. No dia de seu aniversário de 16 anos, enganada pela fada má, ela espetou o dedo e adormeceu. O reino inteiro caiu em um sono mágico. Cem anos se passaram até que um príncipe corajoso chegasse ao castelo. Ele beijou Aurora, quebrando o feitiço. Todos despertaram, e o príncipe e a princesa se casaram, vivendo felizes para sempre.',
-                questions: [
-                    {
-                        question: 'Qual foi a causa do sono profundo da princesa Aurora?',
-                        options: [
-                            'Um feitiço de uma fada má',
-                            'Um encantamento de um príncipe',
-                            'Uma maldição de sua mãe',
-                            'Uma doença misteriosa'
-                        ],
-                        correctAnswer: 0
-                    },
-                    {
-                        question: 'Quem a acordou do sono profundo?',
-                        options: [
-                            'Uma fada boa',
-                            'Um príncipe',
-                            'Um rei',
-                            'Um viajante'
-                        ],
-                        correctAnswer: 1
-                    }
-                ]
-            }
-        ];
+  <script>
+const stories = [
+  {
+    id: 1,
+    title: "Os Ladrões e a Galinha dos Ovos de Ouro",
+    year: 2023,
+    author: "Camilo Duvane",
+    content: `O fazendeiro está no galinheiro segurando um ovo de ouro, com um sorriso imenso no rosto. (pensando) Com esse ovo, vou comprar o maior trator do mundo!
 
-        let chatMessages = [];
+Os ladrões armam um plano com um mapa desenhado à mão de como entrar no galinheiro.
 
-        const welcomeMessage = document.getElementById('welcomeMessage');
-        const userNameDisplay = document.getElementById('userNameDisplay');
-        const highlightedNews = document.getElementById('highlightedNews');
-        const homeButton = document.getElementById('homeButton');
-        const storiesButton = document.getElementById('storiesButton');
-        const profileButton = document.getElementById('profileButton');
-        const chatButton = document.getElementById('chatButton');
-        const loginButton = document.getElementById('loginButton');
-        const loginForm = document.getElementById('loginForm');
-        const showRegisterFormButton = document.getElementById('showRegisterFormButton');
-        const registerForm = document.getElementById('registerForm');
-        const userProfile = document.getElementById('userProfile');
-        const profileInfo = document.getElementById('profileInfo');
-        const editProfileForm = document.getElementById('editProfileForm');
-        const logoutButton = document.getElementById('logoutButton');
-        const adminPanel = document.getElementById('adminPanel');
-        const userList = document.getElementById('userList');
-        const userDetails = document.getElementById('userDetails');
-        const storyEditor = document.getElementById('storyEditor');
-        const storyContent = document.getElementById('storyContent');
-        const saveStoryButton = document.getElementById('saveStoryButton');
-        const storyContainer = document.getElementById('storyContainer');
-        const loginRegisterContainer = document.getElementById('loginRegisterContainer');
-        const toggleProfileInfoButton = document.getElementById('toggleProfileInfo');
-        const chatMessagesElement = document.getElementById('chatMessages');
-        const chatForm = document.getElementById('chatForm');
-        const chatTitle = document.getElementById('chatTitle');
-        const chatBody = document.getElementById('chatBody');
-        const adminChatMessagesElement = document.getElementById('adminChatMessages');
+Os ladrões finalmente chegam ao poleiro, mas a galinha começa a cacarejar alto.
 
-        storyContainer.style.display = 'none';
+Os ladrões fogem em pânico, deixando um rastro de penas para trás.
 
-        function updateNavUserName() {
-            const navUserName = document.getElementById('navUserName');
-            if (currentUser) {
-                navUserName.textContent = currentUser.name;
-            } else {
-                navUserName.textContent = '';
-            }
-        }
+Os ladrões, escondidos atrás de arbustos, observam o fazendeiro voltar para casa.`,
+    read: false,
+    quiz: [
+      {
+        question: "O que o fazendeiro planeja comprar com o ovo de ouro?",
+        options: ["Um carro novo", "O maior trator do mundo", "Uma nova fazenda", "Uma galinha robótica"],
+        correctAnswer: 1
+      },
+      {
+        question: "O que acontece quando os ladrões chegam ao poleiro?",
+        options: ["A galinha dorme", "A galinha põe um ovo", "A galinha começa a cacarejar alto", "A galinha os ataca"],
+        correctAnswer: 2
+      },
+      {
+        question: "Como os ladrões fogem?",
+        options: ["Calmamente", "Em pânico", "Voando", "Nadando"],
+        correctAnswer: 1
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "As Aventuras do Gato de Botas",
+    year: 2022,
+    author: "Camilo Duvane",
+    content: `O Gato de Botas caminha orgulhosamente pela cidade, exibindo suas elegantes botas.
 
-        function isLoggedIn() {
-            return currentUser !== null;
-        }
+O Gato de Botas se prepara para a jornada, enchendo sua bolsa com petiscos de atum.
 
-        function updateNavigation() {
-            if (isLoggedIn()) {
-                loginButton.style.display = 'none';
-                storiesButton.style.pointerEvents = 'auto';
-                profileButton.style.pointerEvents = 'auto';
-                chatButton.style.pointerEvents = 'auto';
-            } else {
-                loginButton.style.display = 'inline-block';
-                storiesButton.style.pointerEvents = 'none';
-                profileButton.style.pointerEvents = 'none';
-                chatButton.style.pointerEvents = 'none';
-            }
-        }
+O Gato de Botas e o Rato chegam à entrada da caverna do Ogro.
 
-        loginButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            showLoginOverlay();
-        });
+O Ogro, orgulhoso, se transforma em um leão rugindo.
 
-        homeButton.addEventListener('click', () => {
-            if (isLoggedIn()) {
-                hideAllSections();
-                welcomeMessage.style.display = 'block';
-                document.querySelector('.content-wrapper').style.display = 'flex';
-                highlightedNews.style.display = 'block';
-            } else {
-                hideAllSections();
-                document.querySelector('.content-wrapper').style.display = 'flex';
-                highlightedNews.style.display = 'block';
-            }
-        });
+O Gato de Botas captura facilmente o Ogro transformado em rato.`,
+    read: false,
+    quiz: [
+      {
+        question: "Qual era o objetivo do Gato de Botas?",
+        options: ["Capturar um ogro", "Encontrar um amigo", "Resolver um mistério", "Ir para casa"],
+        correctAnswer: 0
+      },
+      {
+        question: "O que o Gato de Botas traz com ele para a jornada?",
+        options: ["Uma espada", "Um mapa", "Um bom humor", "Petiscos de atum"],
+        correctAnswer: 3
+      },
+      {
+        question: "Como o Gato de Botas derrota o Ogro?",
+        options: ["Lutando com força", "Usando truques", "Fazendo amizade", "Transformando-o em rato"],
+        correctAnswer: 3
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "O Dia em que o Sol Tirou Férias",
+    year: 2024,
+    author: "Camilo Duvane",
+    content: `O Sol acorda cansado e decide tirar um dia de folga.
 
-        storiesButton.addEventListener('click', () => {
-            if (isLoggedIn()) {
-                hideAllSections();
-                storyContainer.style.display = 'block';
-                loadStories();
-            } else {
-                alert('Por favor, faça login para acessar as histórias.');
-            }
-        });
+As pessoas ficam surpresas ao ver que não amanhece.
 
-        profileButton.addEventListener('click', () => {
-            if (isLoggedIn()) {
-                hideAllSections();
-                userProfile.style.display = 'block';
-            } else {
-                alert('Por favor, faça login para acessar seu perfil.');
-            }
-        });
+Os animais noturnos ficam confusos e não sabem se devem dormir ou ficar acordados.
 
-        chatButton.addEventListener('click', () => {
-            if (isLoggedIn()) {
-                showChatSection();
-            } else {
-                alert('Por favor, faça login para acessar o chat.');
-            }
-        });
+As crianças organizam uma festa do pijama gigante para toda a cidade.
 
-        function showChatSection() {
-            hideAllSections();
-            document.getElementById('chatSection').style.display = 'block';
-            loadChatMessages();
-        }
+O Sol volta de suas férias, descansado e brilhando mais forte que nunca.`,
+    read: false,
+    quiz: [
+      {
+        question: "Por que o Sol decidiu tirar um dia de folga?",
+        options: ["Estava cansado", "Queria ir à praia", "Estava doente", "Queria pregar uma peça"],
+        correctAnswer: 0
+      },
+      {
+        question: "O que as crianças fizeram durante o dia sem Sol?",
+        options: ["Dormiram o dia todo", "Organizaram uma festa do pijama", "Ficaram tristes", "Foram para a escola"],
+        correctAnswer: 1
+      },
+      {
+        question: "Como o Sol estava quando voltou de suas férias?",
+        options: ["Cansado", "Triste", "Descansado e brilhante", "Com nuvens"],
+        correctAnswer: 2
+      }
+    ]
+  },
+  {
+    id: 4,
+    title: "A Girafa que Tinha Medo de Alturas",
+    year: 2024,
+    author: "Camilo Duvane",
+    content: `Gigi, a girafa, descobre que tem medo de alturas ao olhar para baixo.
 
-        function loginAsAdmin() {
-            currentUser = { name: 'Admin', isAdmin: true };
-            hideAllSections();
-            hideLoginRegisterForms();
-            showAdminPanel();
-            updateNavUserName();
-            updateNavigation();
-        }
+Os outros animais tentam ajudar Gigi a superar seu medo.
 
-        function showAdminPanel() {
-            loginRegisterContainer.style.display = 'none';
-            userProfile.style.display = 'none';
-            adminPanel.style.display = 'block';
-            storyContainer.style.display = 'none';
-            loadUserList();
-            loadChatMessages();
-        }
+Gigi pratica olhar para cima em vez de para baixo.
 
-        function showWelcomeMessage() {
-            welcomeMessage.innerHTML = `
-                <h2>Bem-vindo, ${currentUser.name}!</h2>
-                <p>Bem-vindo ao Minha história, Nosso Mundo, o lugar perfeito para explorar histórias encantadoras e divertidas. Aqui você encontrará uma coleção de contos clássicos e modernos para entreter e educar crianças de todas as idades.</p>
-            `;
-            welcomeMessage.style.display = 'block';
-        }
+Um filhote de pássaro cai do ninho e Gigi é a única que pode alcançá-lo.
 
-        loginForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('loginName').value;
-            const password = document.getElementById('loginPassword').value;
+Gigi supera seu medo para salvar o filhote e descobre que alturas não são tão assustadoras.`,
+    read: false,
+    quiz: [
+      {
+        question: "Qual é o nome da girafa da história?",
+        options: ["Gina", "Gigi", "Gina", "Gilda"],
+        correctAnswer: 1
+      },
+      {
+        question: "O que Gigi pratica para superar seu medo?",
+        options: ["Pular", "Correr", "Olhar para cima", "Fechar os olhos"],
+        correctAnswer: 2
+      },
+      {
+        question: "O que faz Gigi superar seu medo no final?",
+        options: ["Ver um arco-íris", "Ganhar um prêmio", "Salvar um filhote de pássaro", "Subir em uma árvore"],
+        correctAnswer: 2
+      }
+    ]
+  },
+  {
+    id: 5,
+    title: "O Peixe que Queria Voar",
+    year: 2024,
+    author: "Camilo Duvane",
+    content: `Finn, o peixinho, sonha em voar como os pássaros.
 
-            if (name === adminUsername && password === adminPassword) {
-                loginAsAdmin();
-            } else {
-                const user = users.find(u => u.name === name && u.password === password);
-                if (user) {
-                    loginUser(user);
-                } else {
-                    alert('Nome de usuário ou senha incorretos.');
-                }
-            }
-        });
+Finn tenta pular para fora da água, mas sempre cai de volta.
 
-        showRegisterFormButton.addEventListener('click', () => {
-            registerForm.style.display = registerForm.style.display === 'none' ? 'block' : 'none';
-        });
+Uma gaivota amiga ensina Finn sobre a importância de ser quem você é.
 
-        editProfileForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            currentUser.name = document.getElementById('editName').value;
-            currentUser.age = document.getElementById('editAge').value;
-            currentUser.gender = document.getElementById('editGender').value;
-            currentUser.contact = document.getElementById('editContact').value;
-            saveUsers();
-            updateProfileInfo();
-        });
+Finn descobre que pode 'voar' debaixo d'água usando suas nadadeiras.
 
-        logoutButton.addEventListener('click', () => {
-            logoutUser();
-        });
+Finn mostra aos pássaros como é incrível 'voar' no oceano. `,
+    read: false,
+    quiz: [
+      {
+        question: "Qual é o sonho de Finn?",
+        options: ["Nadar mais rápido", "Voar como os pássaros", "Viver em um aquário", "Encontrar um tesouro"],
+        correctAnswer: 1
+      },
+      {
+        question: "Quem ajuda Finn a entender a importância de ser quem ele é?",
+        options: ["Um tubarão", "Uma tartaruga", "Uma gaivota", "Outro peixe"],
+        correctAnswer: 2
+      },
+      {
+        question: "O que Finn descobre que pode fazer no final da história?",
+        options: ["Voar no ar", "Respirar fora d'água", "'Voar' debaixo d'água", "Falar com humanos"],
+        correctAnswer: 2
+      }
+    ]
+  }
+];
 
-        saveStoryButton.addEventListener('click', () => {
-            const content = storyContent.value;
-            console.log('Story saved:', content);
-            alert('História salva com sucesso!');
-        });
+function populateMenu() {
+  const menu = document.getElementById('story-menu');
+  menu.innerHTML = '';
+  
+  const sortedStories = stories.sort((a, b) => {
+    if (a.read === b.read) return 0;
+    return a.read ? 1 : -1;
+  });
 
-        toggleProfileInfoButton.addEventListener('click', () => {
-            profileInfo.style.display = profileInfo.style.display === 'none' ? 'block' : 'none';
-        });
+  sortedStories.forEach((story, index) => {
+    const card = document.createElement('div');
+    card.className = `story-card ${story.read ? 'read' : ''}`;
+    card.innerHTML = `
+      <div class="story-title">${index + 1}. ${story.title}</div>
+      <div class="story-info">Ano: ${story.year} | Autor: ${story.author}</div>
+    `;
+    card.onclick = () => showStory(story);
+    menu.appendChild(card);
+  });
+}
 
-        function loadChatMessages() {
-            const messageHTML = chatMessages.map(message => `
-                <div class="chatMessage ${message.sender === 'user' ? 'userMessage' : 'adminMessage'}">
-                    <strong>${message.sender === 'user' ? message.userName : 'Admin'}</strong>
-                    <h4>${message.title}</h4>
-                    <p>${message.body}</p>
-                </div>
-            `).join('');
+let currentStory = null;
 
-            chatMessagesElement.innerHTML = messageHTML;
+function createResultImage(title, quizResult) {
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  
+  canvas.width = 800;
+  canvas.height = 600;
+  
+  ctx.fillStyle = '#f0f0f0';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  
+  ctx.font = 'bold 24px Arial';
+  ctx.fillStyle = '#000000';
+  ctx.textAlign = 'center';
+  ctx.fillText(title, canvas.width / 2, 50);
+  
+  ctx.font = '20px Arial';
+  ctx.fillText(quizResult, canvas.width / 2, 100);
+  
+  ctx.font = 'italic 16px Arial';
+  ctx.fillStyle = '#666666';
+  ctx.textAlign = 'right';
+  ctx.fillText('@CWD2024', canvas.width - 20, canvas.height - 20);
+  
+  return canvas.toDataURL('image/png');
+}
 
-            if (adminChatMessagesElement) {
-                adminChatMessagesElement.innerHTML = messageHTML;
-            }
-        }
+function sendToWhatsApp(imageData) {
+  console.log(`Sending image to WhatsApp (+258842479404)`);
+  
+  const link = document.createElement('a');
+  link.href = imageData;
+  link.download = 'quiz_result.png';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Image sent and downloaded successfully');
+    }, 1000);
+  });
+}
 
-        function sendChatMessage(event) {
-            event.preventDefault();
-            const title = chatTitle.value;
-            const body = chatBody.value;
-            
-            chatMessages.push({
-                sender: 'user',
-                userName: currentUser.name,
-                title: title,
-                body: body
-            });
-            
-            chatTitle.value = '';
-            chatBody.value = '';
-            
-            loadChatMessages();
-        }
+function showLoginOverlay() {
+  document.getElementById('login-overlay').style.display = 'flex';
+  document.querySelector('.container').style.display = 'none';
+  document.getElementById('admin-panel').style.display = 'none';
+  document.getElementById('story-preview').style.display = 'none';
+}
 
-        function adminSendChatMessage(userName) {
-            const adminTitle = prompt('Enter message title:');
-            const adminBody = prompt('Enter message body:');
-            
-            if (adminTitle && adminBody) {
-                chatMessages.push({
-                    sender: 'admin',
-                    userName: 'Admin',
-                    title: adminTitle,
-                    body: adminBody
-                });
-                
-                loadChatMessages();
-            }
-        }
+function hideLoginOverlay() {
+  document.getElementById('login-overlay').style.display = 'none';
+}
 
-        chatForm.addEventListener('submit', sendChatMessage);
+function showAdminPanel() {
+  document.getElementById('admin-panel').style.display = 'block';
+  document.querySelector('.container').style.display = 'none';
+  document.getElementById('story-preview').style.display = 'none';
+  populateStorySelect();
+}
 
-        function loginUser(user) {
-            currentUser = user;
-            updateProfileInfo();
-            hideAllSections();
-            showWelcomeMessage();
-            document.querySelector('.content-wrapper').style.display = 'flex';
-            highlightedNews.style.display = 'block';
-            hideLoginOverlay();
-            updateNavUserName();
-            adminPanel.style.display = 'none';
-            updateNavigation();
-        }
+function populateStorySelect() {
+  const select = document.getElementById('story-select');
+  select.innerHTML = '<option value="">Selecione uma história</option>';
+  stories.forEach(story => {
+    const option = document.createElement('option');
+    option.value = story.id;
+    option.textContent = story.title;
+    select.appendChild(option);
+  });
+  select.addEventListener('change', loadStoryForEditing);
+}
 
-        function showUserProfile() {
-            loginRegisterContainer.style.display = 'none';
-            userProfile.style.display = 'block';
-            adminPanel.style.display = 'none';
-            storyContainer.style.display = 'block';
-        }
+function loadStoryForEditing() {
+  const storyId = parseInt(document.getElementById('story-select').value);
+  const story = stories.find(s => s.id === storyId);
+  if (story) {
+    document.getElementById('edit-title').value = story.title;
+    document.getElementById('edit-year').value = story.year;
+    document.getElementById('edit-author').value = story.author;
+    document.getElementById('edit-content').value = story.content;
+    
+    const quizEditor = document.getElementById('quiz-editor');
+    quizEditor.innerHTML = '';
+    story.quiz.forEach((question, index) => {
+      const questionDiv = document.createElement('div');
+      questionDiv.className = 'quiz-question';
+      questionDiv.innerHTML = `
+        <textarea class="question-text">${question.question}</textarea>
+        ${question.options.map((option, optIndex) => `
+          <input type="text" class="option" value="${option}">
+        `).join('')}
+        <input type="number" class="correct-answer" value="${question.correctAnswer}" min="0" max="3">
+      `;
+      quizEditor.appendChild(questionDiv);
+    });
+  }
+}
 
-        function hideAllSections() {
-            welcomeMessage.style.display = 'none';
-            document.querySelector('.content-wrapper').style.display = 'none';
-            storyContainer.style.display = 'none';
-            userProfile.style.display = 'none';
-            document.getElementById('chatSection').style.display = 'none';
-            adminPanel.style.display = 'none';
-        }
+function saveStoryChanges() {
+  const storyId = parseInt(document.getElementById('story-select').value);
+  const story = stories.find(s => s.id === storyId);
+  if (story) {
+    story.title = document.getElementById('edit-title').value;
+    story.year = parseInt(document.getElementById('edit-year').value);
+    story.author = document.getElementById('edit-author').value;
+    story.content = document.getElementById('edit-content').value;
+    
+    const quizQuestions = document.querySelectorAll('.quiz-question');
+    story.quiz = Array.from(quizQuestions).map(questionDiv => {
+      return {
+        question: questionDiv.querySelector('.question-text').value,
+        options: Array.from(questionDiv.querySelectorAll('.option')).map(option => option.value),
+        correctAnswer: parseInt(questionDiv.querySelector('.correct-answer').value)
+      };
+    });
+    
+    alert('Alterações salvas com sucesso!');
+    populateMenu();
+  }
+}
 
-        function hideLoginRegisterForms() {
-            loginRegisterContainer.style.display = 'none';
-        }
+function previewStory() {
+  const storyId = parseInt(document.getElementById('story-select').value);
+  const story = stories.find(s => s.id === storyId);
+  const previewDiv = document.getElementById('story-preview');
+  
+  if (story) {
+    const modifiedTitle = document.getElementById('edit-title').value;
+    const modifiedYear = document.getElementById('edit-year').value;
+    const modifiedAuthor = document.getElementById('edit-author').value;
+    const modifiedContent = document.getElementById('edit-content').value;
+    
+    previewDiv.innerHTML = `
+      <h3>${modifiedTitle}</h3>
+      <p class="story-info"><strong>Ano:</strong> ${modifiedYear} | <strong>Autor:</strong> ${modifiedAuthor}</p>
+      <div class="story-content">${modifiedContent}</div>
+      <div class="quiz-section">
+        <h4>Quiz</h4>
+        ${story.quiz.map((q, i) => `
+          <div class="question">
+            <p>${i + 1}. ${q.question}</p>
+            <ul>
+              ${q.options.map((option, j) => `
+                <li class="${j === q.correctAnswer ? 'correct-answer' : ''}">${option}${j === q.correctAnswer ? ' (Resposta correta)' : ''}</li>
+              `).join('')}
+            </ul>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    previewDiv.style.display = 'block';
+  } else {
+    previewDiv.innerHTML = '<p>Selecione uma história para visualizar.</p>';
+    previewDiv.style.display = 'block';
+  }
+}
 
-        function updateProfileInfo() {
-            let profileHtml = `
-                <li><strong>Nome:</strong> ${currentUser.name}</li>
-                <li><strong>Idade:</strong> ${currentUser.age}</li>
-                <li><strong>Sexo:</strong> ${currentUser.gender === 'male' ? 'Masculino' : 'Feminino'}</li>
-                <li><strong>Contato:</strong> ${currentUser.contact}</li>
-            `;
+function showMenu() {
+  document.getElementById('story-menu').style.display = 'grid';
+  document.getElementById('comic-container').style.display = 'none';
+  document.getElementById('admin-panel').style.display = 'none';
+  document.getElementById('story-preview').style.display = 'none';
+  document.querySelector('.container').style.display = 'block';
+  currentStory = null;
+  populateMenu();
+}
 
-            if (currentUser.answers) {
-                profileHtml += '<h3>Respostas Corretas:</h3>';
-                Object.entries(currentUser.answers).forEach(([storyId, answers]) => {
-                    const story = stories.find(s => s.id === parseInt(storyId));
-                    if (story) {
-                        profileHtml += `<h4>${story.title}</h4>`;
-                        story.questions.forEach((q, index) => {
-                            const userAnswer = answers[index];
-                            const isCorrect = userAnswer === q.correctAnswer;
-                            profileHtml += `
-                                <p>
-                                    Pergunta ${index + 1}: ${isCorrect ? 'Correta' : 'Incorreta'}
-                                    ${isCorrect ? '' : ` (Resposta correta: ${q.options[q.correctAnswer]})`}
-                                </p>
-                            `;
-                        });
-                    }
-                });
-            }
+function showAdminError() {
+  alert('Senha incorreta. Por favor, contacte Camilo Duvane pelos números 842479404 para obter a senha correta.');
+}
 
-            profileInfo.innerHTML = profileHtml;
-            document.body.style.backgroundColor = currentUser.gender === 'male' ? '#e6f2ff' : '#fff0f5';
-        }
+document.getElementById('admin-btn').addEventListener('click', () => {
+  const password = prompt('Digite a senha de administrador:');
+  if (password === '6363') {
+    hideLoginOverlay();
+    showAdminPanel();
+  } else {
+    showAdminError();
+  }
+});
 
-        function showLoginForm() {
-            hideAllSections();
-            loginRegisterContainer.style.display = 'block';
-            document.getElementById('loginFormElement').style.display = 'block';
-            registerForm.style.display = 'none';
-            document.querySelector('.content-wrapper').style.display = 'flex';
-            highlightedNews.style.display = 'block';
-            updateNavigation();
-        }
+function showStory(story) {
+  currentStory = story;
+  document.getElementById('story-menu').style.display = 'none';
+  const comicContainer = document.getElementById('comic-container');
+  comicContainer.style.display = 'block';
+  
+  document.getElementById('comic-title').textContent = story.title;
+  const comicContent = document.getElementById('comic-content');
+  comicContent.innerHTML = '';
 
-        function loadUserList() {
-            userList.innerHTML = users.map(user => user ? `
-                <li>
-                    ${user.name}
-                    <button onclick="showUserDetails('${user.name}')">Detalhes</button>
-                    <button onclick="deleteUser('${user.name}')">Excluir</button>
-                </li>
-            ` : '').join('');
-        }
+  const scenes = story.content.split('\n\n');
+  scenes.forEach((scene, index) => {
+    const sceneDiv = document.createElement('div');
+    sceneDiv.className = 'scene';
+    sceneDiv.innerHTML = `
+      <h3 class="scene-title">Cena ${index + 1}</h3>
+      <div class="panel">
+        <p class="panel-description">${scene}</p>
+      </div>
+    `;
+    comicContent.appendChild(sceneDiv);
+  });
 
-        function showUserDetails(username) {
-            const user = users.find(u => u.name === username);
-            if (user) {
-                let userDetailsHtml = `
-                    <h3>Detalhes do Usuário</h3>
-                    <p><strong>Nome:</strong> ${user.name}</p>
-                    <p><strong>Idade:</strong> ${user.age}</p>
-                    <p><strong>Sexo:</strong> ${user.gender === 'male' ? 'Masculino' : 'Feminino'}</p>
-                    <p><strong>Contaato:</strong> ${user.contact}</p>
-                    <h4>Histórico de Atividade</h4>
-                    <ul>
-                        ${user.history ? user.history.map(activity => `<li>${activity}</li>`).join('') : 'Nenhuma atividade registrada'}
-                    </ul>
-                    <h4>Contagem de Leituras</h4>
-                    <ul>
-                        ${user.storyReadCount ? Object.entries(user.storyReadCount).map(([story, count]) => `
-                            <li>${story}: ${count} vezes</li>
-                        `).join('') : 'Nenhuma leitura registrada'}
-                    </ul>
-                `;
+  const quizDiv = document.createElement('div');
+  quizDiv.className = 'quiz';
+  quizDiv.innerHTML = `
+    <h3>Quiz</h3>
+    ${story.quiz.map((q, i) => `
+      <div class="question">
+        <p>${i + 1}. ${q.question}</p>
+        ${q.options.map((option, j) => `
+          <label>
+            <input type="radio" name="q${i}" value="${j}">
+            ${option}
+          </label>
+        `).join('')}
+      </div>
+    `).join('')}
+    <button onclick="submitQuiz()">Enviar Respostas</button>
+  `;
+  comicContent.appendChild(quizDiv);
 
-                userDetailsHtml += `<button onclick="adminSendChatMessage('${user.name}')">Responder no Chat</button>`;
-                userDetails.innerHTML = userDetailsHtml;
-            } else {
-                userDetails.innerHTML = '<p>Usuário não encontrado.</p>';
-            }
-        }
+  story.read = true;
+}
 
-        function deleteUser(username) {
-            if (confirm(`Tem certeza que deseja excluir o usuário ${username}?`)) {
-                users = users.filter(u => u.name !== username);
-                saveUsers();
-                loadUserList();
-                userDetails.innerHTML = '';
-            }
-        }
+function submitQuiz() {
+  if (!currentStory) return;
 
-        function showChangePasswordForm(username) {
-            userDetails.innerHTML += `
-                <h4>Alterar Senha</h4>
-                <form onsubmit="changeUserPassword('${username}', event)">
-                    <input type="password" id="newPassword" placeholder="Nova Senha" required>
-                    <button type="submit">Salvar Nova Senha</button>
-                </form>
-            `;
-        }
+  let correctAnswers = 0;
+  const totalQuestions = currentStory.quiz.length;
 
-        function changeUserPassword(username, event) {
-            event.preventDefault();
-            const newPassword = document.getElementById('newPassword').value;
-            const user = users.find(u => u.name === username);
-            if (user) {
-                user.password = newPassword;
-                saveUsers();
-                alert('Senha alterada com sucesso!');
-                showUserDetails(username);
-            }
-        }
+  currentStory.quiz.forEach((q, i) => {
+    const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+    if (selectedAnswer && parseInt(selectedAnswer.value) === q.correctAnswer) {
+      correctAnswers++;
+    }
+  });
 
-        function saveUsers() {
-            localStorage.setItem('users', JSON.stringify(users));
-        }
+  const resultText = `Você acertou ${correctAnswers} de ${totalQuestions} perguntas!`;
+  const imageData = createResultImage(currentStory.title, resultText);
 
-        function loadStories() {
-            storyContainer.innerHTML = stories.map(story => `
-                <div class="story">
-                    <h2>${story.title}</h2>
-                    <p>${story.content.substring(0, 200)}...</p>
-                    <button onclick="readFullStory(${story.id})">Ler História Completa</button>
-                    ${currentUser ? `<button onclick="readStory(${story.id})">Marcar como Lida</button>` : ''}
-                </div>
-            `).join('');
+  sendToWhatsApp(imageData)
+    .then(response => {
+      alert(response);
+      showMenu();
+    })
+    .catch(error => {
+      console.error('Error sending image:', error);
+      alert('Ocorreu um erro ao enviar a imagem. Por favor, tente novamente.');
+    });
+}
 
-            if (!document.getElementById('storyModal')) {
-                const modal = document.createElement('div');
-                modal.id = 'storyModal';
-                modal.innerHTML = `
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h2 id="modalTitle"></h2>
-                        <div id="modalContent"></div>
-                    </div>
-                `;
-                document.body.appendChild(modal);
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
 
-                modal.querySelector('.close').addEventListener('click', () => {
-                    modal.style.display = 'none';
-                });
-            }
-        }
+// Add this to the existing window.addEventListener('load', ...) function
+const fullscreenBtn = document.createElement('button');
+fullscreenBtn.textContent = 'CWD';
+fullscreenBtn.className = 'fullscreen-btn';
+fullscreenBtn.onclick = toggleFullScreen;
+document.body.appendChild(fullscreenBtn);
 
-        function readFullStory(storyId) {
-            const story = stories.find(s => s.id === storyId);
-            if (story) {
-                const modal = document.getElementById('storyModal');
-                const modalTitle = document.getElementById('modalTitle');
-                const modalContent = document.getElementById('modalContent');
+document.getElementById('reading-room-btn').addEventListener('click', () => {
+  hideLoginOverlay();
+  showMenu();
+});
 
-                modalTitle.textContent = story.title;
-                
-                const paragraphs = story.content.split('\n\n');
-                modalContent.innerHTML = paragraphs.map(paragraph => `<p>${paragraph}</p>`).join('');
+window.addEventListener('load', () => {
+  showLoginOverlay();
+  populateMenu();
+});
 
-                modal.style.display = 'block';
-            }
-        }
-
-        function showStoryQuestions(storyId) {
-            const story = stories.find(s => s.id === storyId);
-            if (story && story.questions) {
-                let questionHtml = '<h3>Perguntas sobre a história:</h3>';
-                story.questions.forEach((q, index) => {
-                    questionHtml += `
-                        <div class="question">
-                            <p>${q.question}</p>
-                            ${q.options.map((option, optionIndex) => `
-                                <label>
-                                    <input type="radio" name="question${index}" value="${optionIndex}">
-                                    ${option}
-                                </label>
-                            `).join('')}
-                        </div>
-                    `;
-                });
-                questionHtml += `<button onclick="submitAnswers(${storyId})">Enviar Respostas</button>`;
-                
-                const modalContent = document.getElementById('modalContent');
-                modalContent.innerHTML += questionHtml;
-            }
-        }
-
-        function submitAnswers(storyId) {
-            const story = stories.find(s => s.id === storyId);
-            if (story && story.questions) {
-                const userAnswers = story.questions.map((q, index) => {
-                    const selected = document.querySelector(`input[name="question${index}"]:checked`);
-                    return selected ? parseInt(selected.value) : -1;
-                });
-                
-                if (!currentUser.answers) {
-                    currentUser.answers = {};
-                }
-                currentUser.answers[storyId] = userAnswers;
-                
-                saveUsers();
-                alert('Respostas enviadas com sucesso!');
-                
-                document.getElementById('storyModal').style.display = 'none';
-            }
-        }
-
-        function showLoginOverlay() {
-            document.getElementById('loginOverlay').style.display = 'flex';
-        }
-
-        function hideLoginOverlay() {
-            document.getElementById('loginOverlay').style.display = 'none';
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const slider = document.querySelector('.news-slider');
-            const prevBtn = document.querySelector('.prev-btn');
-            const nextBtn = document.querySelector('.next-btn');
-            let slideIndex = 0;
-
-            function showSlide(index) {
-                slider.style.transform = `translateX(-${index * 100}%)`;
-            }
-
-            prevBtn.addEventListener('click', () => {
-                slideIndex = (slideIndex - 1 + 3) % 3;
-                showSlide(slideIndex);
-            });
-
-            nextBtn.addEventListener('click', () => {
-                slideIndex = (slideIndex + 1) % 3;
-                showSlide(slideIndex);
-            });
-
-            setInterval(() => {
-                slideIndex = (slideIndex + 1) % 3;
-                showSlide(slideIndex);
-            }, 5000);
-
-            updateNavigation();
-        });
-    </script>
-</body>
-</html>
+stories.forEach(story => {
+  story.author = "Camilo Duvane";
+});
+</script>
+</body></html>
