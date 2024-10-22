@@ -1,4 +1,4 @@
-<html><head><base href="https://websimstorage.com/comics/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Biblioteca de Histórias em Quadrinhos</title>
+<html><head><base href="https://camiloduvane.github.io/CWD/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Biblioteca de Histórias em Quadrinhos</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap');
 
