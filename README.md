@@ -637,9 +637,6 @@ E assim termina a história dos ladrões, que, mesmo com todo o planejamento, ac
         question: "Como os ladrões fogem?",
         options: ["Calmamente", "Em pânico", "Voando", "Nadando"],
         correctAnswer: 1
-      }stion: "O que o fazendeiro planejava fazer com o ovo de ouro?",
-        options: ["A galinha dorme", "A galinha põe um ovo", "A galinha começa a cacarejar alto", "A galinha os ataca"],
-        correctAnswer: 1
       },
       {
         question: "Como os ladrões planejavam roubar o ovo?",
@@ -660,7 +657,6 @@ E assim termina a história dos ladrões, que, mesmo com todo o planejamento, ac
         question: "Como os ladrões fogem?",
         options: ["Calmamente", "Em pânico", "Voando", "Nadando"],
         correctAnswer: 1
-      }   correctAnswer: 1
       }
     ]
   },
