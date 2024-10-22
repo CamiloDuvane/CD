@@ -600,63 +600,10 @@ E assim termina a história dos ladrões, que, mesmo com todo o planejamento, ac
         options: ["A galinha dorme", "A galinha põe um ovo", "A galinha começa a cacarejar alto", "A galinha os ataca"],
         correctAnswer: 2
       },
-      {
-        question: "Como os ladrões fogem?",
-        options: ["Calmamente", "Em pânico", "Voando", "Nadando"],
      {
         question: "O que o fazendeiro encontrou no galinheiro?",
         options: ["Um carro novo", "O maior trator do mundo", "Uma nova fazenda", "Uma galinha robótica"],
         correctAnswer: 2
-      },
-      {
-        question: "O que o fazendeiro encontrou no galinheiro?",
-        options: ["Um carro novo", "O maior trator do mundo", "Uma nova fazenda", "Uma galinha robótica"],
-        correctAnswer: 2
-      },
-      {
-        question: "O que o fazendeiro planejava fazer com o ovo de ouro?",
-        options: ["A galinha dorme", "A galinha põe um ovo", "A galinha começa a cacarejar alto", "A galinha os ataca"],
-        correctAnswer: 1
-      },
-      {
-        question: "Como os ladrões planejavam roubar o ovo?",
-        options: ["Calmamente", "Em pânico", "Voando", "Nadando"],
-        correctAnswer: 1
-      },      
-      {
-        question: "O que o fazendeiro planeja comprar com o ovo de ouro?",
-        options: ["Um carro novo", "O maior trator do mundo", "Uma nova fazenda", "Uma galinha robótica"],
-        correctAnswer: 1
-      },
-      {
-        question: "O que acontece quando os ladrões chegam ao poleiro?",
-        options: ["A galinha dorme", "A galinha põe um ovo", "A galinha começa a cacarejar alto", "A galinha os ataca"],
-        correctAnswer: 2
-      },
-      {
-        question: "Como os ladrões fogem?",
-        options: ["Calmamente", "Em pânico", "Voando", "Nadando"],
-        correctAnswer: 1
-      },
-      {
-        question: "Como os ladrões planejavam roubar o ovo?",
-        options: ["Calmamente", "Em pânico", "Voando", "Nadando"],
-        correctAnswer: 1
-      },      
-      {
-        question: "O que o fazendeiro planeja comprar com o ovo de ouro?",
-        options: ["Um carro novo", "O maior trator do mundo", "Uma nova fazenda", "Uma galinha robótica"],
-        correctAnswer: 1
-      },
-      {
-        question: "O que acontece quando os ladrões chegam ao poleiro?",
-        options: ["A galinha dorme", "A galinha põe um ovo", "A galinha começa a cacarejar alto", "A galinha os ataca"],
-        correctAnswer: 2
-      },
-      {
-        question: "Como os ladrões fogem?",
-        options: ["Calmamente", "Em pânico", "Voando", "Nadando"],
-        correctAnswer: 1
       }
     ]
   },
