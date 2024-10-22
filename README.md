@@ -488,10 +488,10 @@
 const stories = [
   {
     id: 1,
-    title: "Os Ladrões e a Galinha dos Ovos de Ouro",
-    year: 2023,
+    title: "A Galinha dos Ovos de Ouro",
+    year: 2024,
     author: "Camilo Duvane",
-    content: `O fazendeiro está no galinheiro segurando um ovo de ouro, com um sorriso imenso no rosto. (pensando) Com esse ovo, vou comprar o maior trator do mundo!
+    content: `Era uma vez, um fazendeiro está no galinheiro segurando um ovo de ouro, com um sorriso imenso no rosto. (pensando) Com esse ovo, vou comprar o maior trator do mundo!
 
 Os ladrões armam um plano com um mapa desenhado à mão de como entrar no galinheiro.
 
@@ -522,7 +522,7 @@ Os ladrões, escondidos atrás de arbustos, observam o fazendeiro voltar para ca
   {
     id: 2,
     title: "As Aventuras do Gato de Botas",
-    year: 2022,
+    year: 2020,
     author: "Camilo Duvane",
     content: `O Gato de Botas caminha orgulhosamente pela cidade, exibindo suas elegantes botas.
 
@@ -555,7 +555,7 @@ O Gato de Botas captura facilmente o Ogro transformado em rato.`,
   {
     id: 3,
     title: "O Dia em que o Sol Tirou Férias",
-    year: 2024,
+    year: 2023,
     author: "Camilo Duvane",
     content: `O Sol acorda cansado e decide tirar um dia de folga.
 
