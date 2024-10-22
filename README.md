@@ -528,7 +528,8 @@ const stories = [
     title: "A Galinha dos Ovos de Ouro",
     year: 2023,
     author: "Camilo Duvane",
-    content: `No silêncio da manhã, o fazendeiro entrou no galinheiro como fazia todos os dias. Mas, para sua surpresa, encontrou algo brilhando no meio das palhas: um ovo de ouro. Ele o pegou cuidadosamente, admirando o brilho metálico com um sorriso imenso no rosto.
+    content: `<p> Era uma vez</p>
+    No silêncio da manhã, o fazendeiro entrou no galinheiro como fazia todos os dias. Mas, para sua surpresa, encontrou algo brilhando no meio das palhas: um ovo de ouro. Ele o pegou cuidadosamente, admirando o brilho metálico com um sorriso imenso no rosto.
 "Com esse ovo, vou comprar o maior trator do mundo!"
 Ele não conseguia conter a alegria, imaginando as novas possibilidades que esse ovo traria para sua fazenda. Com o ovo seguro em suas mãos, ele saiu do galinheiro, sem perceber que estava sendo vigiado.
 
@@ -540,19 +541,17 @@ Os dois abriram um mapa desenhado à mão no chão, traçando os passos de como 
 
 <p>O Roubo</p>
 Na calada da noite, os ladrões finalmente executaram seu plano. Chegaram ao poleiro, mal iluminado pela luz da lua, e começaram a se aproximar da galinha que, supostamente, botava os ovos de ouro. Quando estavam prestes a pegá-la, um som alto os fez congelar.
-"CÓCÓRÓCÓCÓÓÓÓÓ!"
+<p>"CÓCÓRÓCÓCÓÓÓÓÓ!"</p>
 O cacarejar ecoou por toda a fazenda, acordando os outros animais. Desesperados, os ladrões se entreolharam, o medo crescendo.
 
 <p>A Fuga<p/>
 "Corre! Corre!"
-Os dois fugiram em pânico, tropeçando nas cercas e deixando um **rastro de penas** para trás, enquanto o cacarejar continuava alto. O plano perfeito tinha virado um desastre. Eles correram sem parar até encontrarem abrigo.
+Os dois fugiram em pânico, tropeçando nas cercas e deixando um rastro de penas para trás, enquanto o cacarejar continuava alto. O plano perfeito tinha virado um desastre. Eles correram sem parar até encontrarem abrigo.
 
-O Fazendeiro Retorna
+<p>O Fazendeiro Retorna</p>
 Na manhã seguinte, os ladrões, ainda tremendo e escondidos atrás de arbustos, observaram o fazendeiro retornando ao galinheiro. Ele parecia alheio ao ocorrido, acariciando a galinha e levando outro ovo para casa, com um sorriso no rosto.
 "Que noite tranquila. Agora é hora de vender outro ovo de ouro."
-
 Enquanto o fazendeiro caminhava para sua casa, os ladrões sabiam que, por ora, seus planos de roubar a galinha dos ovos de ouro estavam arruinados.
-
 E assim termina a história dos ladrões, que, mesmo com todo o planejamento, acabaram fugindo com as mãos vazias!`,
     read: false,
     quiz: [
