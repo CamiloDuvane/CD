@@ -428,6 +428,43 @@
     font-weight: bold;
   }
 
+  .quiz-result {
+    background-color: #f0f8ff;
+    border: 1px solid #add8e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .quiz-result h3 {
+    font-family: 'Bangers', cursive;
+    color: #4ecdc4;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .quiz-result p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  .quiz-result button {
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .quiz-result button:hover {
+    background-color: #ff4757;
+  }
+
   .fullscreen-btn {
     position: fixed;
     top: 20px;
@@ -488,10 +525,10 @@
 const stories = [
   {
     id: 1,
-    title: "A Galinha dos Ovos de Ouro",
-    year: 2024,
+    title: "Os Ladrões e a Galinha dos Ovos de Ouro",
+    year: 2023,
     author: "Camilo Duvane",
-    content: `Era uma vez, um fazendeiro está no galinheiro segurando um ovo de ouro, com um sorriso imenso no rosto. (pensando) Com esse ovo, vou comprar o maior trator do mundo!
+    content: `O fazendeiro está no galinheiro segurando um ovo de ouro, com um sorriso imenso no rosto. (pensando) Com esse ovo, vou comprar o maior trator do mundo!
 
 Os ladrões armam um plano com um mapa desenhado à mão de como entrar no galinheiro.
 
@@ -522,7 +559,7 @@ Os ladrões, escondidos atrás de arbustos, observam o fazendeiro voltar para ca
   {
     id: 2,
     title: "As Aventuras do Gato de Botas",
-    year: 2020,
+    year: 2022,
     author: "Camilo Duvane",
     content: `O Gato de Botas caminha orgulhosamente pela cidade, exibindo suas elegantes botas.
 
@@ -555,7 +592,7 @@ O Gato de Botas captura facilmente o Ogro transformado em rato.`,
   {
     id: 3,
     title: "O Dia em que o Sol Tirou Férias",
-    year: 2023,
+    year: 2024,
     author: "Camilo Duvane",
     content: `O Sol acorda cansado e decide tirar um dia de folga.
 
@@ -675,49 +712,6 @@ function populateMenu() {
 }
 
 let currentStory = null;
-
-function createResultImage(title, quizResult) {
-  const canvas = document.createElement('canvas');
-  const ctx = canvas.getContext('2d');
-  
-  canvas.width = 800;
-  canvas.height = 600;
-  
-  ctx.fillStyle = '#f0f0f0';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-  
-  ctx.font = 'bold 24px Arial';
-  ctx.fillStyle = '#000000';
-  ctx.textAlign = 'center';
-  ctx.fillText(title, canvas.width / 2, 50);
-  
-  ctx.font = '20px Arial';
-  ctx.fillText(quizResult, canvas.width / 2, 100);
-  
-  ctx.font = 'italic 16px Arial';
-  ctx.fillStyle = '#666666';
-  ctx.textAlign = 'right';
-  ctx.fillText('@CWD2024', canvas.width - 20, canvas.height - 20);
-  
-  return canvas.toDataURL('image/png');
-}
-
-function sendToWhatsApp(imageData) {
-  console.log(`Sending image to WhatsApp (+258842479404)`);
-  
-  const link = document.createElement('a');
-  link.href = imageData;
-  link.download = 'quiz_result.png';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-  
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve('Image sent and downloaded successfully');
-    }, 1000);
-  });
-}
 
 function showLoginOverlay() {
   document.getElementById('login-overlay').style.display = 'flex';
@@ -917,17 +911,20 @@ function submitQuiz() {
   });
 
   const resultText = `Você acertou ${correctAnswers} de ${totalQuestions} perguntas!`;
-  const imageData = createResultImage(currentStory.title, resultText);
+  displayQuizResults(currentStory.title, resultText);
+}
 
-  sendToWhatsApp(imageData)
-    .then(response => {
-      alert(response);
-      showMenu();
-    })
-    .catch(error => {
-      console.error('Error sending image:', error);
-      alert('Ocorreu um erro ao enviar a imagem. Por favor, tente novamente.');
-    });
+function displayQuizResults(title, resultText) {
+  const comicContent = document.getElementById('comic-content');
+  const resultDiv = document.createElement('div');
+  resultDiv.className = 'quiz-result';
+  resultDiv.innerHTML = `
+    <h3>${title}</h3>
+    <p>${resultText}</p>
+    <button onclick="showMenu()">Voltar ao Menu</button>
+  `;
+  comicContent.innerHTML = '';
+  comicContent.appendChild(resultDiv);
 }
 
 function toggleFullScreen() {
