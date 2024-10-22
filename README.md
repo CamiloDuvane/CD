@@ -490,7 +490,7 @@
 <body>
   <div id="login-overlay" class="overlay">
     <div class="login-container">
-      <h2>Bem-vindo à Biblioteca de Histórias em Quadrinhos</h2>
+      <h2>Seja bem-vindo à Biblioteca de Histórias em Quadrinhos! Onde cada história é uma nova aventura esperando para ser descoberta</h2>
       <button id="reading-room-btn" class="login-btn">Sala de Leitura</button>
       <button id="admin-btn" class="login-btn">Administrador</button>
     </div>
@@ -525,18 +525,35 @@
 const stories = [
   {
     id: 1,
-    title: "Os Ladrões e a Galinha dos Ovos de Ouro",
+    title: "A Galinha dos Ovos de Ouro",
     year: 2023,
     author: "Camilo Duvane",
-    content: `O fazendeiro está no galinheiro segurando um ovo de ouro, com um sorriso imenso no rosto. (pensando) Com esse ovo, vou comprar o maior trator do mundo!
+    content: `No silêncio da manhã, o fazendeiro entrou no galinheiro como fazia todos os dias. Mas, para sua surpresa, encontrou algo brilhando no meio das palhas: um ovo de ouro. Ele o pegou cuidadosamente, admirando o brilho metálico com um sorriso imenso no rosto.
+"Com esse ovo, vou comprar o maior trator do mundo!"
+Ele não conseguia conter a alegria, imaginando as novas possibilidades que esse ovo traria para sua fazenda. Com o ovo seguro em suas mãos, ele saiu do galinheiro, sem perceber que estava sendo vigiado.
 
-Os ladrões armam um plano com um mapa desenhado à mão de como entrar no galinheiro.
+<p>O Plano dos Ladrões</p>
+Do outro lado da fazenda, escondidos entre árvores, dois ladrões observavam atentamente o fazendeiro. Eles tinham ouvido rumores sobre o ovo de ouro e estavam determinados a roubá-lo.
+"Precisamos desse ovo. Com ele, seremos ricos!"
+Os dois abriram um mapa desenhado à mão no chão, traçando os passos de como invadir o galinheiro. Estavam confiantes de que o plano era perfeito.
+"Entramos pelo portão lateral, depois escalamos a cerca e pegamos a galinha. Fácil."
 
-Os ladrões finalmente chegam ao poleiro, mas a galinha começa a cacarejar alto.
+<p>O Roubo</p>
+Na calada da noite, os ladrões finalmente executaram seu plano. Chegaram ao poleiro, mal iluminado pela luz da lua, e começaram a se aproximar da galinha que, supostamente, botava os ovos de ouro. Quando estavam prestes a pegá-la, um som alto os fez congelar.
+"CÓCÓRÓCÓCÓÓÓÓÓ!"
+O cacarejar ecoou por toda a fazenda, acordando os outros animais. Desesperados, os ladrões se entreolharam, o medo crescendo.
 
-Os ladrões fogem em pânico, deixando um rastro de penas para trás.
+<p>A Fuga<p/>
+"Corre! Corre!"
+Os dois fugiram em pânico, tropeçando nas cercas e deixando um **rastro de penas** para trás, enquanto o cacarejar continuava alto. O plano perfeito tinha virado um desastre. Eles correram sem parar até encontrarem abrigo.
 
-Os ladrões, escondidos atrás de arbustos, observam o fazendeiro voltar para casa.`,
+O Fazendeiro Retorna
+Na manhã seguinte, os ladrões, ainda tremendo e escondidos atrás de arbustos, observaram o fazendeiro retornando ao galinheiro. Ele parecia alheio ao ocorrido, acariciando a galinha e levando outro ovo para casa, com um sorriso no rosto.
+"Que noite tranquila. Agora é hora de vender outro ovo de ouro."
+
+Enquanto o fazendeiro caminhava para sua casa, os ladrões sabiam que, por ora, seus planos de roubar a galinha dos ovos de ouro estavam arruinados.
+
+E assim termina a história dos ladrões, que, mesmo com todo o planejamento, acabaram fugindo com as mãos vazias!`,
     read: false,
     quiz: [
       {
