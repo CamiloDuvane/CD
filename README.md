@@ -1,4 +1,4 @@
-<html><head><base href="https://camiloduvane.github.io/CWD/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Biblioteca de Histórias em Quadrinhos</title>
+<html><head><base href="https://camiloduvane.github.io/CD/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Biblioteca de Histórias em Quadrinhos</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap');
 
@@ -557,53 +557,53 @@ E assim termina a história dos ladrões, que, mesmo com todo o planejamento, ac
     quiz: [
       {
         question: "O que o fazendeiro encontrou no galinheiro?",
-        options: ["Um carro novo", "O maior trator do mundo", "Uma nova fazenda", "Uma galinha robótica"],
+        options: ["Uma galinha nova", "Um ovo de prata", "Um ovo de ouro", "Um saco de dinheiro"],
         correctAnswer: 2
       },
       {
         question: "O que o fazendeiro planejava fazer com o ovo de ouro?",
-        options: ["A galinha dorme", "A galinha põe um ovo", "A galinha começa a cacarejar alto", "A galinha os ataca"],
+        options: ["Construir uma casa", "Comprar o maior trator do mundo", "Vender a fazenda", "Guardar o ovo como lembrança"],
         correctAnswer: 1
       },
       {
         question: "Como os ladrões planejavam roubar o ovo?",
-        options: ["Calmamente", "Em pânico", "Voando", "Nadando"],
-        correctAnswer: 1
+        options: ["Elaborando um plano com um mapa desenhado à mão", "Pedindo o ovo ao fazendeiro", "Comprando a galinha do fazendeiro", "Esperando a galinha botar outro ovo"],
+        correctAnswer: 0
       },
       {
-        question: "O que o fazendeiro encontrou no galinheiro?",
-        options: ["Um carro novo", "O maior trator do mundo", "Uma nova fazenda", "Uma galinha robótica"],
+        question: "Quando os ladrões decidiram executar o plano?",
+        options: ["De manhã cedo", "À tarde", "Durante a noite", "No horário de almoço"],
         correctAnswer: 2
       },
       {
-        question: "O que o fazendeiro planejava fazer com o ovo de ouro?",
-        options: ["A galinha dorme", "A galinha põe um ovo", "A galinha começa a cacarejar alto", "A galinha os ataca"],
+        question: "O que aconteceu quando os ladrões chegaram ao galinheiro?",
+        options: ["A galinha os atacou", "O fazendeiro os pegou", "Eles roubaram o ovo", "A galinha começou a cacarejar alto"],
+        correctAnswer: 3
+      },
+      {
+        question: "O que os ladrões fizeram quando ouviram a galinha cacarejar?",
+        options: ["Pegaram a galinha e correram", "Fugiram em pânico", "Se esconderam no galinheiro", "Gritaram por ajuda"],
         correctAnswer: 1
       },
       {
-        question: "Como os ladrões planejavam roubar o ovo?",
-        options: ["Calmamente", "Em pânico", "Voando", "Nadando"],
-        correctAnswer: 1
-      },
-      {
-        question: "Como os ladrões planejavam roubar o ovo?",
-        options: ["Calmamente", "Em pânico", "Voando", "Nadando"],
-        correctAnswer: 1
+        question: "Onde os ladrões se esconderam após fugirem do galinheiro?",
+        options: ["No celeiro", "Dentro do galinheiro", "Atrás de arbustos", "Na casa do fazendeiro"],
+        correctAnswer: 2
       },   
       {
-        question: "O que o fazendeiro planeja comprar com o ovo de ouro?",
-        options: ["Um carro novo", "O maior trator do mundo", "Uma nova fazenda", "Uma galinha robótica"],
-        correctAnswer: 1
+        question: "O fazendeiro percebeu o plano dos ladrões?",
+        options: ["Não", "Sim, ele os pegou", "Sim, mas não fez nada", "Sim, e correu atrás deles"],
+        correctAnswer: 0
       },
       {
-        question: "O que acontece quando os ladrões chegam ao poleiro?",
-        options: ["A galinha dorme", "A galinha põe um ovo", "A galinha começa a cacarejar alto", "A galinha os ataca"],
-        correctAnswer: 2
+        question: "O que o fazendeiro fez na manhã seguinte?",
+        options: ["Ele voltou ao galinheiro, acariciou a galinha e levou outro ovo para casa", "Ele descobriu o plano dos ladrões", "Ele vendeu a galinha", "Ele trancou o galinheiro"],
+        correctAnswer: 0
       },
      {
-        question: "O que o fazendeiro encontrou no galinheiro?",
-        options: ["Um carro novo", "O maior trator do mundo", "Uma nova fazenda", "Uma galinha robótica"],
-        correctAnswer: 2
+        question: "Como a história termina para os ladrões?",
+        options: ["Conseguem roubar o ovo", "São presos pelo fazendeiro", "Se tornam amigos do fazendeiro", "Fugiram sem o ovo e com o plano fracassado"],
+        correctAnswer: 3
       }
     ]
   },
