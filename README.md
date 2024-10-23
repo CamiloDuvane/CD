@@ -667,30 +667,56 @@ Com o Ogro derrotado, o Gato de Botas e o Rato descobriram o tesouro escondido n
     title: "O Dia em que o Sol Tirou Férias",
     year: 2024,
     author: "Camilo Duvane",
-    content: `O Sol acorda cansado e decide tirar um dia de folga.
+    content: `<p>O Sol Decide Descansar</p>
+Era uma vez, em um reino distante, onde todos os dias o Sol nascia pontualmente, brilhante e caloroso, iluminando o mundo com sua luz dourada. No entanto, naquela manhã, algo inesperado aconteceu. O Sol, ao despertar no horizonte, se sentiu cansado. "Todos os dias eu ilumino a Terra sem descanso", pensou ele. "Hoje, vou tirar um dia de folga!" E assim, sem pensar duas vezes, o Sol se escondeu atrás de uma nuvem enorme, bocejou, e adormeceu novamente.
 
-As pessoas ficam surpresas ao ver que não amanhece.
+<p>O Mundo sem Amanhecer</p>
+As horas passaram e, estranhamente, não amanhecia. As pessoas saíram de suas casas, mas a escuridão continuava. O relógio marcava 8 da manhã, depois 9, 10… e ainda estava tudo escuro. "O que está acontecendo?", perguntavam-se, intrigadas. Os agricultores esperavam a luz do Sol para começar o trabalho, as crianças estavam confusas, e até os relógios de sol ficaram inúteis. As ruas estavam cheias de murmúrios: "Onde está o Sol? Será que ele nos abandonou?"
 
-Os animais noturnos ficam confusos e não sabem se devem dormir ou ficar acordados.
+<p>A Confusão dos Animais</p>
+Enquanto as pessoas tentavam entender o que estava acontecendo, os animais noturnos ficaram completamente confusos. Os morcegos voavam em círculos, sem saber se deveriam caçar ou voltar para suas cavernas. As corujas, que normalmente dormiam durante o dia, estavam acordadas, mas estranhavam que a noite parecia não ter fim. "Deveríamos continuar acordados?", perguntava-se um lobo a outro. "Ou será que estamos presos em uma noite eterna?" Os animais diurnos, por sua vez, se recusavam a sair de seus abrigos, achando que era noite.
 
-As crianças organizam uma festa do pijama gigante para toda a cidade.
+<p>Os Planos da Lua</p>
+Enquanto o Sol descansava, a Lua, que normalmente só aparecia à noite, olhava a Terra com preocupação. Ela sabia que não estava pronta para iluminar o mundo durante o dia. "Eu sou a guardiã da noite", pensava a Lua, "mas com o Sol dormindo, alguém precisa cuidar de tudo!" Assim, a Lua decidiu aparecer no céu, mas sua luz fraca não era suficiente para trazer a mesma energia que o Sol. "Preciso acordar o Sol", concluiu.
 
-O Sol volta de suas férias, descansado e brilhando mais forte que nunca.`,
+<p>A Conversa da Lua com o Sol</p>
+A Lua, então, subiu até o esconderijo do Sol e o encontrou profundamente adormecido. "Sol!", chamou a Lua suavemente. "Todos na Terra estão confusos. Os humanos estão inquietos, os animais não sabem o que fazer, e a natureza precisa de você." O Sol abriu um olho, ainda preguiçoso. "Só mais cinco minutos...", ele murmurou. Mas a Lua insistiu: "Você pode descansar depois. O mundo precisa da sua luz!" Relutante, o Sol finalmente se espreguiçou e saiu de trás da nuvem.
+
+<p>O Sol Retorna ao Céu</p>
+De repente, um feixe de luz dourada cortou o céu, e as pessoas começaram a aplaudir. "O Sol voltou!", gritaram. Os animais diurnos saíram de seus abrigos, animados para um novo dia, enquanto os noturnos voltaram para suas cavernas e tocas, aliviados por poderem finalmente descansar. A Lua sorriu ao ver a Terra retornar ao seu equilíbrio natural. O Sol, mesmo ainda um pouco cansado, sentiu-se feliz por voltar a iluminar o mundo, sabendo que era insubstituível.
+
+<p>Uma Lição Importante</p>
+Antes de desaparecer no horizonte ao final do dia, o Sol refletiu: "Talvez eu realmente precise de uma folga de vez em quando, mas o mundo depende de mim. Da próxima vez, vou descansar durante a noite e deixar a Lua fazer seu trabalho." E assim, o Sol aprendeu uma importante lição sobre responsabilidade e equilíbrio, e o mundo voltou a sua rotina normal, com Sol durante o dia e Lua à noite.`,
     read: false,
     quiz: [
       {
         question: "Por que o Sol decidiu tirar um dia de folga?",
-        options: ["Estava cansado", "Queria ir à praia", "Estava doente", "Queria pregar uma peça"],
+        options: ["Porque ele estava cansado de iluminar o mundo todos os dias.", "Porque estava chovendo.", "Porque a Lua pediu para ele descansar.", "Porque os humanos não precisavam mais de sua luz."],
         correctAnswer: 0
       },
       {
-        question: "O que as crianças fizeram durante o dia sem Sol?",
-        options: ["Dormiram o dia todo", "Organizaram uma festa do pijama", "Ficaram tristes", "Foram para a escola"],
+        question: "O que aconteceu com as pessoas quando o Sol não apareceu?",
+        options: ["Elas foram dormir novamente.", "Elas não perceberam a falta do Sol.", "Elas fizeram uma festa para a Lua.", "Elas ficaram surpresas e confusas porque não amanhecia."],
+        correctAnswer: 3
+      },
+      {
+        question: "Como os animais noturnos reagiram à ausência do Sol?",
+        options: ["Eles aproveitaram para caçar mais.", "Eles ficaram confusos, sem saber se deveriam dormir ou ficar acordados.", "Eles ficaram felizes por poder viver o dia todo na escuridão.", "Eles voltaram para suas tocas imediatamente."],
         correctAnswer: 1
       },
       {
-        question: "Como o Sol estava quando voltou de suas férias?",
-        options: ["Cansado", "Triste", "Descansado e brilhante", "Com nuvens"],
+        question: "Qual foi a solução que a Lua encontrou para lidar com a falta do Sol?",
+        options: ["Ela decidiu brilhar com mais força para iluminar o dia.", "Ela foi conversar com o Sol para convencê-lo a voltar.", "Ela foi conversar com o Sol para convencê-lo a voltar.", "Ela decidiu deixar o mundo sem luz até o Sol voltar."],
+        correctAnswer: 2
+      },
+      {
+        question: "Como o Sol reagiu quando a Lua tentou convencê-lo a voltar?",
+        options: ["Ele se recusou e pediu para a Lua cuidar do dia.", "Ele disse que precisava de mais tempo para descansar, mas acabou voltando.", "Ele concordou imediatamente e voltou para o céu.", "Ele se escondeu ainda mais."],
+        correctAnswer: 1
+      },
+      {
+        question: "Qual foi a lição que o Sol aprendeu ao final da história?",
+        options: ["Que ele pode tirar folga quando quiser, sem avisar ninguém.", "Que o mundo não depende tanto dele quanto ele pensava.", "Que ele tem uma grande responsabilidade e deve descansar nos momentos apropriados.", "Que a Lua deveria assumir o papel de iluminar o mundo sempre."],
         correctAnswer: 2
       }
     ]
