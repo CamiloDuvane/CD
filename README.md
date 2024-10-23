@@ -726,15 +726,23 @@ Antes de desaparecer no horizonte ao final do dia, o Sol refletiu: "Talvez eu re
     title: "A Girafa que Tinha Medo de Alturas",
     year: 2024,
     author: "Camilo Duvane",
-    content: `Gigi, a girafa, descobre que tem medo de alturas ao olhar para baixo.
+    content: `<p>Gigi Descobre seu Medo</p>
+Era uma vez, em uma vasta savana africana, onde vivia uma jovem girafa chamada Gigi. Gigi era alta, com um pescoço comprido como todas as girafas, mas havia algo que a diferenciava: ela tinha medo de alturas! Tudo começou em um dia ensolarado, quando Gigi estava comendo folhas do topo de uma árvore alta. Curiosa, ela olhou para baixo e sentiu um frio na barriga. "Ai, que alto!", pensou, tremendo um pouco. Suas longas pernas pareceram bambear e, naquele momento, ela descobriu que tinha um grande medo de olhar para baixo.
 
-Os outros animais tentam ajudar Gigi a superar seu medo.
+<p>Os Animais Tentam Ajudar</p>
+A notícia sobre o medo de Gigi rapidamente se espalhou pela savana. Todos os outros animais ficaram surpresos: "Como uma girafa, que é tão alta, pode ter medo de altura?" Mas, ao invés de rirem dela, os amigos de Gigi decidiram ajudar. O elefante sugeriu: "Você deveria tentar subir em colinas pequenas e olhar para baixo, para se acostumar". O macaco, que adorava balançar nas árvores, disse: "Tente subir em uma árvore comigo, Gigi, e vamos balançar lá do alto!". Mas nada disso parecia funcionar. Cada vez que Gigi olhava para baixo, seu medo voltava.
 
-Gigi pratica olhar para cima em vez de para baixo.
+<p>Gigi Pratica Olhar para Cima</p>
+Desanimada, Gigi pensou que jamais superaria seu medo. Foi então que uma coruja sábia, que observava tudo de longe, deu um conselho diferente: "Gigi, ao invés de olhar para baixo, por que você não tenta olhar para cima? O céu é vasto e bonito. Quem sabe isso ajude a acalmar seu coração." Gigi ficou pensativa. "Olhar para cima? Nunca pensei nisso!" No dia seguinte, Gigi começou a praticar. Toda vez que sentia o medo chegar, ela olhava para o céu azul, para as nuvens fofas, e aos poucos começou a se sentir mais confiante. "O céu é lindo", pensava, "e não há nada a temer quando olho para cima."
 
-Um filhote de pássaro cai do ninho e Gigi é a única que pode alcançá-lo.
+<p>O Filhote de Pássaro em Perigo</p>
+Certo dia, enquanto caminhava pela savana, Gigi ouviu um piado desesperado. Olhando para o alto de uma árvore, ela viu que um filhote de pássaro tinha caído do ninho e estava preso em um galho mais abaixo. A mãe pássaro voava em pânico ao redor, mas não conseguia alcançar o filhote. Gigi olhou em volta e percebeu que, por mais que outros animais quisessem ajudar, nenhum deles era alto o suficiente para alcançar o filhote. Ela sabia que só ela poderia salvá-lo. "Eu sou a única que pode fazer isso", pensou Gigi, seu coração acelerando.
 
-Gigi supera seu medo para salvar o filhote e descobre que alturas não são tão assustadoras.`,
+<p>Gigi Supera seu Medo</p>
+Com o filhote choramingando, Gigi sabia que não podia hesitar. Apesar de sentir o medo apertar em seu peito, ela lembrou-se do que havia aprendido: "Olhe para cima, Gigi!" Com determinação, ela ergueu a cabeça, olhou para o céu, e estendeu seu pescoço longo e elegante até o galho onde o filhote estava preso. Sem olhar para baixo, Gigi gentilmente pegou o filhote com sua boca e o devolveu ao ninho seguro. Todos os animais ao redor aplaudiram sua coragem. Gigi, surpresa com o que acabara de fazer, percebeu que, ao focar no que realmente importava — o filhote —, o medo desaparecera. Ela havia superado seu medo de altura!
+
+<p>Uma Nova Giraffa</p>
+Depois daquele dia, Gigi nunca mais teve medo de altura. Ela entendeu que às vezes nossos maiores medos podem ser superados quando nos concentramos em algo mais importante. Gigi continuou a olhar para o céu, mas agora, sempre que necessário, ela também conseguia olhar para baixo com confiança. A savana comemorava sua bravura, e Gigi, que antes tinha medo de ser tão alta, agora tinha orgulho de sua altura, sabendo que isso a tornava especial e capaz de grandes feitos.`,
     read: false,
     quiz: [
       {
@@ -750,6 +758,21 @@ Gigi supera seu medo para salvar o filhote e descobre que alturas não são tão
       {
         question: "O que faz Gigi superar seu medo no final?",
         options: ["Ver um arco-íris", "Ganhar um prêmio", "Salvar um filhote de pássaro", "Subir em uma árvore"],
+        correctAnswer: 2
+      },
+      {
+        question: "Como os outros animais reagem ao medo de Gigi?",
+        options: ["Eles riem dela.", "Eles ignoram seu medo.", "Eles dizem que ela deve ficar longe de alturas.", "Eles tentam ajudá-la a superar seu medo."],
+        correctAnswer: 3
+      },
+      {
+        question: "Qual conselho a coruja sábia dá a Gigi?",
+        options: ["Olhar para cima em vez de para baixo.", "Ignorar seu medo.", "Olhar para cima", "Pedir ajuda a outros animais."],
+        correctAnswer: 0
+      },
+      {
+        question: "O que Gigi descobre sobre alturas ao salvar o filhote de pássaro?",
+        options: ["Que alturas são sempre assustadoras.", "Que ela prefere ficar no chão.", "Que alturas não são tão assustadoras como ela pensava", "Que nunca mais quer subir em árvores"],
         correctAnswer: 2
       }
     ]
