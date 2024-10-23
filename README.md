@@ -612,31 +612,53 @@ E assim termina a história dos ladrões, que, mesmo com todo o planejamento, ac
     title: "As Aventuras do Gato de Botas",
     year: 2022,
     author: "Camilo Duvane",
-    content: `O Gato de Botas caminha orgulhosamente pela cidade, exibindo suas elegantes botas.
+    content: `<p>O Desfile do Gato de Botas</p>
+Era uma vez, em uma cidade distante, um gato muito especial que usava botas de couro reluzente. Ele era conhecido por sua astúcia e coragem. Enquanto caminhava pelas ruas, os moradores admiravam sua confiança e elegância. Com sua espada presa ao cinto e seu chapéu inclinado para o lado, o Gato de Botas se preparava para uma missão perigosa: derrotar o terrível Ogro da montanha. Ele sorriu de canto, sabendo que nada poderia impedi-lo.
 
-O Gato de Botas se prepara para a jornada, enchendo sua bolsa com petiscos de atum.
+<p>Preparativos para a Jornada</p>
+Em seu esconderijo secreto, o Gato de Botas organizava tudo com cuidado. Ele encheu sua bolsa com petiscos de atum, colocou sua capa e ajustou bem as botas. "Vamos, Rato", disse ele ao seu pequeno companheiro. "Hoje é o dia em que enfrentaremos o Ogro e sairemos vitoriosos!" O Rato, que sempre o acompanhava, tremia de medo, mas confiava plenamente no Gato de Botas.
 
-O Gato de Botas e o Rato chegam à entrada da caverna do Ogro.
+<p>A Caminho da Caverna</p>
+Eles caminharam por florestas densas e cruzaram rios gelados até que, finalmente, chegaram à entrada da caverna do Ogro. O lugar era sombrio, com musgos escorrendo pelas paredes de pedra e uma neblina que parecia esconder perigos à espreita. O Gato de Botas sacou sua espada e deu um passo à frente. "Agora começa a verdadeira aventura", ele disse, com um brilho nos olhos.
 
-O Ogro, orgulhoso, se transforma em um leão rugindo.
+<p>O Primeiro Desafio – Os Guardiões de Pedra</p>
+Ao entrarem na caverna, dois enormes guardiões de pedra surgiram das sombras, bloqueando o caminho. Suas vozes ressoavam como trovões: "Ninguém entra sem provar sua força!" O Gato de Botas não hesitou. Ele pulou com agilidade, desviando dos socos pesados das estátuas e usando sua espada para desferir golpes rápidos. Com suas botas mágicas, ele saltava pelas paredes, confundindo os guardiões, até que, com um movimento preciso, derrubou as criaturas de pedra com um golpe final.
 
-O Gato de Botas captura facilmente o Ogro transformado em rato.`,
+<p>O Labirinto do Ogro</p>
+Após vencer os guardiões, o Gato e o Rato se viram diante de um labirinto escuro e traiçoeiro. O Ogro tinha enchido o lugar de armadilhas mortais. Flechas voavam de todos os lados, e o chão se abria em buracos profundos. Mas o Gato de Botas, com sua incrível habilidade e agilidade, desviava de cada obstáculo, enquanto o Rato seguia em sua cauda, torcendo para que não errassem o caminho. A cada passo, o labirinto parecia mais difícil, mas o Gato de Botas não desistia.
+
+<p>O Encontro com o Ogro</p>
+Finalmente, depois de vencer o labirinto, eles chegaram à câmara central, onde o Ogro estava sentado em seu trono de ossos. Ele era gigantesco, com músculos que pareciam montanhas e olhos que brilhavam como brasas. "Quem ousa invadir minha caverna?", rugiu o Ogro. O Gato de Botas se aproximou, sem mostrar medo, e disse: "Eu sou o Gato de Botas, e vim acabar com o seu reinado de terror!" O Ogro deu uma gargalhada, mas o Gato estava preparado.
+
+<p>A Grande Batalha</p>
+O Ogro levantou seu pesado porrete e atacou, fazendo o chão tremer. O Gato de Botas, com sua agilidade, saltava para fora do alcance dos golpes, desferindo ataques rápidos com sua espada. Cada vez que o Ogro tentava esmagá-lo, o Gato usava suas botas mágicas para saltar mais alto e mais rápido, cortando o monstro em pontos estratégicos. Mas o Ogro era poderoso, e cada erro poderia ser fatal.
+<p>A luta foi intensa. O Gato escalava as paredes e usava cada centímetro de sua inteligência e agilidade para vencer. Em um momento de descuido, o Ogro o encurralou, mas o Rato, com sua pequena bravura, mordeu o tornozelo do gigante, distraindo-o por tempo suficiente para o Gato de Botas desferir o golpe final — um corte certeiro que fez o Ogro cair, derrotado.</p>
+
+<p>O Tesouro e o Retorno Triunfante</p>
+Com o Ogro derrotado, o Gato de Botas e o Rato descobriram o tesouro escondido nas profundezas da caverna. Riquezas além da imaginação estavam à sua disposição, mas, mais importante que o ouro, era a sensação de vitória e dever cumprido. O Gato de Botas olhou para o Rato e sorriu. "Conseguimos, meu amigo. Agora, vamos para casa."
+
+<p>E assim, o Gato de Botas voltou para a cidade, mais uma vez aclamado como herói. As pessoas o saudaram enquanto ele caminhava pelas ruas com suas botas brilhando e sua cabeça erguida, sabendo que sua coragem e astúcia haviam salvado o dia mais uma vez.</p>`,
     read: false,
     quiz: [
       {
-        question: "Qual era o objetivo do Gato de Botas?",
-        options: ["Capturar um ogro", "Encontrar um amigo", "Resolver um mistério", "Ir para casa"],
+        question: "Qual era o objetivo do Gato de Botas ao entrar na caverna do Ogro?",
+        options: ["Encontrar um tesouro perdido.", "Libertar prisioneiros do Ogro.", "Derrotar o Ogro e acabar com seu reinado de terror.", "Procurar um antigo artefato mágico."],
+        correctAnswer: 2
+      },
+      {
+        question: "Quem acompanhava o Gato de Botas em sua jornada?",
+        options: ["Um pequeno rato.", "Um cavalo valente.", "Um corvo sábio.", "Um leão corajoso."],
         correctAnswer: 0
       },
       {
-        question: "O que o Gato de Botas traz com ele para a jornada?",
-        options: ["Uma espada", "Um mapa", "Um bom humor", "Petiscos de atum"],
-        correctAnswer: 3
+        question: "Qual foi o primeiro desafio que o Gato de Botas enfrentou dentro da caverna?",
+        options: ["Um rio de lava.", "Guardiões de pedra gigantes.", "Uma armadilha de flechas.", "Um dragão adormecido."],
+        correctAnswer: 1
       },
       {
-        question: "Como o Gato de Botas derrota o Ogro?",
-        options: ["Lutando com força", "Usando truques", "Fazendo amizade", "Transformando-o em rato"],
-        correctAnswer: 3
+        question: "Como o Rato ajudou o Gato de Botas na batalha contra o Ogro?",
+        options: ["Distraiu o Ogro mordendo seu tornozelo.", "Trouxe uma espada mágica ao Gato de Botas.", " Fez uma armadilha para o Ogro cair.", "Falou com o Ogro para negociar a paz."],
+        correctAnswer: 0
       }
     ]
   },
