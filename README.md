@@ -526,7 +526,7 @@ const stories = [
   {
     id: 1,
     title: "A Galinha dos Ovos de Ouro",
-    year: 2023,
+    year: 2000,
     author: "Camilo Duvane",
     content: `No silêncio da manhã, o fazendeiro entrou no galinheiro como fazia todos os dias. Mas, para sua surpresa, encontrou algo brilhando no meio das palhas: um ovo de ouro. Ele o pegou cuidadosamente, admirando o brilho metálico com um sorriso imenso no rosto.
 "Com esse ovo, vou comprar o maior trator do mundo!"
@@ -610,7 +610,7 @@ E assim termina a história dos ladrões, que, mesmo com todo o planejamento, ac
   {
     id: 2,
     title: "As Aventuras do Gato de Botas",
-    year: 2022,
+    year: 1995,
     author: "Camilo Duvane",
     content: `<p>O Desfile do Gato de Botas</p>
 Era uma vez, em uma cidade distante, um gato muito especial que usava botas de couro reluzente. Ele era conhecido por sua astúcia e coragem. Enquanto caminhava pelas ruas, os moradores admiravam sua confiança e elegância. Com sua espada presa ao cinto e seu chapéu inclinado para o lado, o Gato de Botas se preparava para uma missão perigosa: derrotar o terrível Ogro da montanha. Ele sorriu de canto, sabendo que nada poderia impedi-lo.
@@ -665,7 +665,7 @@ Com o Ogro derrotado, o Gato de Botas e o Rato descobriram o tesouro escondido n
   {
     id: 3,
     title: "O Dia em que o Sol Tirou Férias",
-    year: 2024,
+    year: 2022,
     author: "Camilo Duvane",
     content: `<p>O Sol Decide Descansar</p>
 Era uma vez, em um reino distante, onde todos os dias o Sol nascia pontualmente, brilhante e caloroso, iluminando o mundo com sua luz dourada. No entanto, naquela manhã, algo inesperado aconteceu. O Sol, ao despertar no horizonte, se sentiu cansado. "Todos os dias eu ilumino a Terra sem descanso", pensou ele. "Hoje, vou tirar um dia de folga!" E assim, sem pensar duas vezes, o Sol se escondeu atrás de uma nuvem enorme, bocejou, e adormeceu novamente.
