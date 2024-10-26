@@ -814,43 +814,59 @@ Finn, cheio de alegria, voltou para perto da superfície e chamou Gabi e os outr
 
 {
     id: 5,
-    title: "O Peixe que Queria Voar",
+    title: "A Formiga e a Cigarra",
     year: 2024,
     author: "Camilo Duvane",
-    content: `Finn, o peixinho, olhava para o céu enquanto os pássaros voavam em grandes círculos. Seus olhos brilhavam com a ideia de fazer o mesmo. “Oh, como seria maravilhoso tocar as nuvens e sentir o vento nas nadadeiras!” ele pensava, sonhando em voar.
+    content: `Era uma vez, numa floresta cheia de vida, uma cigarra que passava os dias cantando e tocando sua música alegre. A cigarra adorava o verão, com seu calor acolhedor e abundância de comida. Ela passava os dias pulando de folha em folha, apreciando a vida ao máximo.
 
-Determinada, Finn começou a praticar. Com todo o impulso que conseguia, ele nadava até a superfície e pulava para fora da água, esticando suas nadadeiras como asas. Mas, inevitavelmente, caía de volta na água com um splash. Ele tentava, tentava, mas o resultado era sempre o mesmo.
+Enquanto isso, a formiga, sua vizinha, estava ocupada trabalhando arduamente. A formiga sabia que o verão não duraria para sempre. Ela coletava grãos e sementes, armazenando provisões para o inverno rigoroso que viria. Cada dia, ela saía cedo para trabalhar e voltava tarde, sempre carregando algo para o seu formigueiro.
 
-Um dia, enquanto tentava mais uma vez, uma gaivota chamada Gabi pousou na beira da água e o observou. "Por que você está tentando voar, Finn?", perguntou ela. Finn respondeu: "Quero ser livre como vocês, os pássaros." A gaivota sorriu com carinho e disse: "Ser livre não significa ser como os outros. Nós, pássaros, voamos no céu, mas vocês, peixes, têm um mundo imenso para explorar debaixo d'água."
+<p>A cigarra observava a formiga e ria dela.</p>
+– Formiga, por que você trabalha tanto? – perguntava a cigarra. – Venha cantar e aproveitar o verão! A vida é curta demais para desperdiçar com trabalho.
 
-Refletindo sobre as palavras de Gabi, Finn percebeu que podia “voar” de uma forma diferente, explorando o oceano com suas nadadeiras. Ele começou a nadar mais rápido, dando voltas e piruetas na água. Sentiu-se livre, sentiu-se feliz. Descobriu que, ao movimentar as nadadeiras e o corpo com agilidade, podia ‘voar’ debaixo d'água, como nunca havia pensado antes.
+<p>A formiga, pacientemente, respondia:</p>
+– Estou me preparando para o inverno. Quando o frio chegar, você verá que o meu trabalho valerá a pena. E você, cigarra, o que fará quando a neve cobrir tudo e não houver mais comida?
 
-Finn, cheio de alegria, voltou para perto da superfície e chamou Gabi e os outros pássaros para verem. Ele fez um verdadeiro espetáculo aquático, girando, saltando e fazendo acrobacias. Os pássaros ficaram impressionados e aplaudiram seu talento. "Uau, Finn!", disseram eles, "você realmente sabe voar!". Finn, finalmente, sentiu que não precisava ser como os pássaros para sentir a liberdade que tanto desejava. Ele havia encontrado seu próprio voo. `,
+A cigarra apenas dava de ombros e continuava a cantar. Ela não conseguia imaginar que o verão algum dia acabaria.
+
+Os dias quentes e ensolarados passaram rapidamente, e o outono chegou com seus ventos frios e folhas caindo. A cigarra começou a perceber a mudança no ar, mas ainda assim continuava a cantar, embora com menos entusiasmo.
+
+Finalmente, o inverno chegou com toda a sua força. A floresta, antes cheia de vida, agora estava coberta de neve. As árvores estavam nuas, e não havia mais folhas ou grãos disponíveis. A cigarra, tremendo de frio e faminta, tentou encontrar algo para comer, mas tudo estava coberto de gelo.
+
+<p>Desesperada, a cigarra foi até a casa da formiga. Bateu na porta, quase sem forças, e implorou: </p>
+– Formiga, por favor, me ajude! Estou morrendo de fome e frio. Não tenho onde ficar nem o que comer.
+
+A formiga abriu a porta e, ao ver a cigarra em tão mau estado, sentiu compaixão. Convidou a cigarra para entrar e deu-lhe um pouco de comida quente.
+
+– Durante o verão, enquanto eu trabalhava, você só cantava. – disse a formiga. – Agora você vê a importância do trabalho e da preparação.
+
+<p>A cigarra, arrependida, abaixou a cabeça. </p>
+– Você tem razão, formiga. Eu fui tola em não me preparar para o inverno. Se você me permitir, prometo que no próximo verão trabalharei duro ao seu lado e nunca mais subestimarei a importância de estar preparada.
+
+A formiga, sendo generosa e compassiva, aceitou a promessa da cigarra. E assim, durante todo o inverno, as duas viveram juntas, compartilhando a comida e o calor.
+
+Quando o verão voltou, a cigarra cumpriu sua promessa. Trabalhou arduamente ao lado da formiga, coletando e armazenando provisões para o próximo inverno. E, de vez em quando, ainda encontrava tempo para cantar e tocar sua música, mas agora com a sabedoria de que o trabalho e a diversão podem coexistir de forma equilibrada.
+
+Essa fábula destaca a importância do trabalho duro, da preparação e da responsabilidade, além de valorizar a compaixão e o perdão.`,
     read: false,
     quiz: [
       {
-        question: "Qual é o sonho de Finn?",
-        options: ["Nadar mais rápido", "Voar como os pássaros", "Viver em um aquário", "Encontrar um tesouro"],
+        question: "Qual é a principal diferença entre a formiga e a cigarra?",
+        options: ["A formiga canta, enquanto a cigarra trabalha", "A formiga trabalha duro para se preparar, enquanto a cigarra se diverte sem se preocupar com o futuro", "A formiga é grande, e a cigarra é pequena", "A formiga não gosta de música, enquanto a cigarra toca instrumentos"],
         correctAnswer: 1
       },
       {
-        question: "Quem ajuda Finn a entender a importância de ser quem ele é?",
-        options: ["Um tubarão", "Uma tartaruga", "Uma gaivota", "Outro peixe"],
-        correctAnswer: 2
+        question: "O que a formiga está fazendo durante o verão?",
+        options: ["Coletando grãos e se preparando para o inverno", "Dormindo", "Procurando um lugar para morar", "Cantando e dançando"],
+        correctAnswer: 0
       },
       {
-        question: "O que Finn descobre que pode fazer no final da história?",
-        options: ["Voar no ar", "Respirar fora d'água", "'Voar' debaixo d'água", "Falar com humanos"],
-        correctAnswer: 2
+        question: "Como a cigarra se sente quando o inverno chega?",
+        options: ["Feliz e satisfeita", "Esperançosa e otimista", "Atraente e popular", "Fria e faminta"],
+        correctAnswer: 3
       }
     ]
-} 
-
-
-
-
-
-  
+}   
 ];
 
 function populateMenu() {
