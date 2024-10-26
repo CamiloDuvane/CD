@@ -809,7 +809,48 @@ Finn, cheio de alegria, voltou para perto da superfície e chamou Gabi e os outr
         correctAnswer: 2
       }
     ]
-  }
+  }, 
+
+
+{
+    id: 5,
+    title: "O Peixe que Queria Voar",
+    year: 2024,
+    author: "Camilo Duvane",
+    content: `Finn, o peixinho, olhava para o céu enquanto os pássaros voavam em grandes círculos. Seus olhos brilhavam com a ideia de fazer o mesmo. “Oh, como seria maravilhoso tocar as nuvens e sentir o vento nas nadadeiras!” ele pensava, sonhando em voar.
+
+Determinada, Finn começou a praticar. Com todo o impulso que conseguia, ele nadava até a superfície e pulava para fora da água, esticando suas nadadeiras como asas. Mas, inevitavelmente, caía de volta na água com um splash. Ele tentava, tentava, mas o resultado era sempre o mesmo.
+
+Um dia, enquanto tentava mais uma vez, uma gaivota chamada Gabi pousou na beira da água e o observou. "Por que você está tentando voar, Finn?", perguntou ela. Finn respondeu: "Quero ser livre como vocês, os pássaros." A gaivota sorriu com carinho e disse: "Ser livre não significa ser como os outros. Nós, pássaros, voamos no céu, mas vocês, peixes, têm um mundo imenso para explorar debaixo d'água."
+
+Refletindo sobre as palavras de Gabi, Finn percebeu que podia “voar” de uma forma diferente, explorando o oceano com suas nadadeiras. Ele começou a nadar mais rápido, dando voltas e piruetas na água. Sentiu-se livre, sentiu-se feliz. Descobriu que, ao movimentar as nadadeiras e o corpo com agilidade, podia ‘voar’ debaixo d'água, como nunca havia pensado antes.
+
+Finn, cheio de alegria, voltou para perto da superfície e chamou Gabi e os outros pássaros para verem. Ele fez um verdadeiro espetáculo aquático, girando, saltando e fazendo acrobacias. Os pássaros ficaram impressionados e aplaudiram seu talento. "Uau, Finn!", disseram eles, "você realmente sabe voar!". Finn, finalmente, sentiu que não precisava ser como os pássaros para sentir a liberdade que tanto desejava. Ele havia encontrado seu próprio voo. `,
+    read: false,
+    quiz: [
+      {
+        question: "Qual é o sonho de Finn?",
+        options: ["Nadar mais rápido", "Voar como os pássaros", "Viver em um aquário", "Encontrar um tesouro"],
+        correctAnswer: 1
+      },
+      {
+        question: "Quem ajuda Finn a entender a importância de ser quem ele é?",
+        options: ["Um tubarão", "Uma tartaruga", "Uma gaivota", "Outro peixe"],
+        correctAnswer: 2
+      },
+      {
+        question: "O que Finn descobre que pode fazer no final da história?",
+        options: ["Voar no ar", "Respirar fora d'água", "'Voar' debaixo d'água", "Falar com humanos"],
+        correctAnswer: 2
+      }
+    ]
+} 
+
+
+
+
+
+  
 ];
 
 function populateMenu() {
