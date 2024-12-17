@@ -866,7 +866,144 @@ Essa fábula destaca a importância do trabalho duro, da preparação e da respo
         correctAnswer: 3
       }
     ]
-}   
+}, 
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    id: 1,
+    title: "A Travessia da Floresta - Uma Jornada de Coragem é Números",
+    year: 2025,
+    author: "Camilo Duvane",
+    content: `Camilo Duvane, um jovem de 16 anos, vivia na pequena Vila Serenidade, cercada por uma floresta tão densa que parecia esconder segredos de eras esquecidas. O caminho até a escola, que ficava na cidade vizinha, exigia atravessar essa floresta. Poucos se arriscavam por lá, mas Camilo não tinha escolha. Seu sonho de se tornar contador e auditor não permitia que ele desistisse, não importava o quão perigoso fosse o trajeto.
+
+<p>Primeiro Dia: O Começo do Desafio</p>
+Com a mochila nas costas e uma calculadora no bolso, Camilo deu seus primeiros passos na floresta. Mal entrou na trilha e já sentiu que algo o observava. De repente, um rugido ensurdecedor ecoou. Um monstro gigantesco, com olhos brilhantes e presas afiadas, emergiu das sombras. Era uma criatura que parecia um cruzamento entre um gorila e um crocodilo.
+
+Camilo, tremendo de medo, lembrou-se das aulas de matéria financeira. Ele pensou rápido: “Se isso fosse uma negociação, como eu apresentaria uma solução?” Usando sua lanterna, projetou uma sombra que assustou o monstro, dando-lhe tempo para correr.
+
+“Preciso de um plano melhor se quiser sobreviver a isso todos os dias”, murmurou enquanto recuperava o fôlego.
+
+<p>O Segundo Dia: Estratégia e Números</p>
+Determinado a se preparar melhor, Camilo levou um caderno onde desenhou mapas e anotou tudo o que encontrava na floresta. No segundo dia, ao atravessar um rio, deparou-se com um monstro semelhante a uma serpente gigante que bloqueava sua passagem. Camilo usou um truque matemático: calculou a trajetória das pedras no rio para criar um caminho seguro. Jogando algumas pedras para distrair a serpente, atravessou o rio ileso. Ele sentiu uma pequena vitória e anotou: “É tudo uma questão de resolver problemas.”
+
+<p>O Terceiro Dia: Aliados Inesperados</p>
+No terceiro dia, Camilo encontrou macacos agitados que o alertaram para o perigo. Agradecendo pela ajuda, ofereceu uma fruta e, em troca, os macacos passaram a segui-lo como guias. Ao longo do caminho, enfrentaram juntos um monstro com corpo de árvore e tentáculos que prendiam quem tentasse passar. Camilo usou um truque: desenhou um esquema financeiro na terra, distraindo o monstro enquanto os macacos criavam uma rota alternativa.
+
+“Quem diria que até monstros se interessam por planejamento financeiro?”, ele brincou.
+
+<p>Uma Semana de Surpresas</p>
+Com o passar dos dias, Camilo começou a observar padrões no comportamento dos monstros. Em uma manhã nebulosa, deparou-se com um gigante feito de rochas que bloqueava o caminho. O monstro parecia inabalável, mas Camilo percebeu que ele se movia de forma lenta e previsível. Usando um cronograma que rabiscou em seu caderno, esperou pelos momentos exatos para avançar entre as passadas pesadas da criatura. No fim do dia, anotou em seu diário: “Análise de padrões e gestão de tempo funcionam até com monstros.”
+
+Em outra ocasião, a floresta se encheu de uma névoa espessa que fazia Camilo perder o rumo. Ele calculou a direção usando um relógio de sol improvisado e os mapas que desenhara. No caminho, encontrou um esquilo que parecia saber onde estava indo. Camilo o seguiu, apenas para descobrir que o pequeno animal o estava levando a uma clareira onde ele enfrentaria uma aranha gigante com oito olhos flamejantes.
+
+Desta vez, Camilo usou lógica simples: distraiu a criatura com reflexos de luz usando um pequeno espelho da mochila, criando confusão suficiente para escapar. 
+
+<p>Um Mês Depois: O Enigma do Labirinto Vivo</p>
+Após semanas de travessias desafiadoras, Camilo encontrou o que parecia ser um labirinto formado por árvores que se moviam lentamente, mudando de posição sempre que ele escolhia um caminho. Ele lembrou-se das aulas de probabilidade e começou a marcar cada rota que já havia tentado. Depois de várias tentativas, conseguiu atravessar o labirinto e deixou um registro detalhado do trajeto para futuras viagens.
+
+Ao sair do labirinto, encontrou Luna, uma garota corajosa que também atravessava a floresta. Ela revelou que seu objetivo era semelhante ao de Camilo: chegar à escola e alcançar seus sonhos. Juntos, começaram a enfrentar os desafios, combinando suas habilidades e desenvolvendo estratégias cada vez mais eficazes.
+
+<p>O Terceiro Ano: A União Faz a Força</p>
+No terceiro ano, os monstros da floresta pareciam estar mais organizados. Camilo e Luna começaram a observar que algumas criaturas agiam em grupos, formando verdadeiras emboscadas. Eles criaram um sistema de comunicação com apitos e sinais visuais para alertar um ao outro de perigos iminentes.
+
+Certa vez, enfrentaram um grupo de pássaros gigantes que atacavam em revoada. Camilo usou sua habilidade de cálculos rápidos para prever as trajetórias dos pássaros, enquanto Luna usava uma funda para derrubar alguns e criar uma rota de fuga. “Auditoria de riscos nunca foi tão literal”, Camilo comentou com um sorriso nervoso.
+
+<p>O Quarto Ano: A Jornada Final</p>
+Durante os quatro anos de travessias diárias, Camilo aprendeu a lidar com os desafios da floresta usando sua paixão pela contabilidade. Ele criou estratégias baseadas em análises de risco, fez anotações detalhadas sobre os monstros e suas fraquezas e desenvolveu um sistema para economizar energia e tempo.
+
+No último dia antes de se formar no ensino geral, a floresta parecia mais ameaçadora do que nunca. Uma tempestade tornava o caminho quase intransitável, e monstros gigantes cercavam a trilha. Mas Camilo estava pronto. Ele usou um plano detalhado, onde cada passo era calculado. Usou até mesmo estatísticas para prever o comportamento dos monstros e atravessou a floresta com sucesso.
+
+Ao chegar à escola, sentiu uma mistura de alívio e orgulho. Sua dedicação aos estudos o levou a ser aceito em uma renomada universidade, onde se especializou em Contabilidade e Auditoria.
+
+<p>A Formação e a Distinção de Honra</p>
+Na faculdade, Camilo aplicou tudo o que aprendeu na floresta. Suas análises financeiras eram tão precisas quanto os planos que usava para escapar de monstros. Em sua formatura, recebeu uma distinção de honra pelo excelente desempenho acadêmico.
+
+Durante o discurso, Camilo disse: “A contabilidade me salvou da floresta, e os números me mostraram que, com coragem e planejamento, podemos enfrentar qualquer desafio. Nunca desistam de seus sonhos, mesmo que haja monstros no caminho."`,
+    read: false,
+    quiz: [
+      {
+        question: "O que o fazendeiro encontrou no galinheiro?",
+        options: ["Uma galinha nova", "Um ovo de prata", "Um ovo de ouro", "Um saco de dinheiro"],
+        correctAnswer: 2
+      },
+      {
+        question: "O que o fazendeiro planejava fazer com o ovo de ouro?",
+        options: ["Construir uma casa", "Comprar o maior trator do mundo", "Vender a fazenda", "Guardar o ovo como lembrança"],
+        correctAnswer: 1
+      },
+      {
+        question: "Como os ladrões planejavam roubar o ovo?",
+        options: ["Elaborando um plano com um mapa desenhado à mão", "Pedindo o ovo ao fazendeiro", "Comprando a galinha do fazendeiro", "Esperando a galinha botar outro ovo"],
+        correctAnswer: 0
+      },
+      {
+        question: "Quando os ladrões decidiram executar o plano?",
+        options: ["De manhã cedo", "À tarde", "Durante a noite", "No horário de almoço"],
+        correctAnswer: 2
+      },
+      {
+        question: "O que aconteceu quando os ladrões chegaram ao galinheiro?",
+        options: ["A galinha os atacou", "O fazendeiro os pegou", "Eles roubaram o ovo", "A galinha começou a cacarejar alto"],
+        correctAnswer: 3
+      },
+      {
+        question: "O que os ladrões fizeram quando ouviram a galinha cacarejar?",
+        options: ["Pegaram a galinha e correram", "Fugiram em pânico", "Se esconderam no galinheiro", "Gritaram por ajuda"],
+        correctAnswer: 1
+      },
+      {
+        question: "Onde os ladrões se esconderam após fugirem do galinheiro?",
+        options: ["No celeiro", "Dentro do galinheiro", "Atrás de arbustos", "Na casa do fazendeiro"],
+        correctAnswer: 2
+      },   
+      {
+        question: "O fazendeiro percebeu o plano dos ladrões?",
+        options: ["Não", "Sim, ele os pegou", "Sim, mas não fez nada", "Sim, e correu atrás deles"],
+        correctAnswer: 0
+      },
+      {
+        question: "O que o fazendeiro fez na manhã seguinte?",
+        options: ["Ele voltou ao galinheiro, acariciou a galinha e levou outro ovo para casa", "Ele descobriu o plano dos ladrões", "Ele vendeu a galinha", "Ele trancou o galinheiro"],
+        correctAnswer: 0
+      },
+     {
+        question: "Como a história termina para os ladrões?",
+        options: ["Conseguem roubar o ovo", "São presos pelo fazendeiro", "Se tornam amigos do fazendeiro", "Fugiram sem o ovo e com o plano fracassado"],
+        correctAnswer: 3
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 ];
 
 function populateMenu() {
