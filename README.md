@@ -867,20 +867,8 @@ Essa fábula destaca a importância do trabalho duro, da preparação e da respo
       }
     ]
 }, 
-
-
-
-
-
-
-
-
-
-
-
-
 {
-    id: 1,
+    id: 7,
     title: "A Travessia da Floresta - Uma Jornada de Coragem é Números",
     year: 2025,
     author: "Camilo Duvane",
@@ -932,6 +920,83 @@ Durante o discurso, Camilo disse: “A contabilidade me salvou da floresta, e os
     read: false,
     quiz: [
       {
+question: "Qual era o principal objetivo de Camilo ao atravessar a floresta diariamente?",
+        options: ["Buscar frutas raras para vender", "Ir à escola para realizar o sonho de ser contador e Auditor", "Explorar a floresta para escrever um livro", "Fugir da vila Serenidade"],
+        correctAnswer: 1
+      },
+
+question: "O que Camilo usou para assustar o monstro no primeiro dia?",
+options: ["Uma pedra", "Uma sombra projetada pela lanterna", "Um grito alto", "Um esquema financeiro"],
+correctAnswer: 1
+
+
+question: "Como Camilo conseguiu atravessar o rio bloqueado pela serpente gigante?", 
+options: ["Pulando diretamente sobre a serpente", "Usando um barco improvisado", "Jogando pedras para distraí-la e calculando a trajetória segura", "Chamando ajuda dos macaco"], 
+correctAnswer: 2
+
+queation: ["Qual foi a primeira aliança formada por Camilo na floresta?
+a) Com Luna, a garota corajosa.
+b) Com macacos que o ajudaram a identificar perigos.
+c) Com um esquilo que o guiou.
+d) Com o monstro rochoso.
+Resposta correta: b
+
+
+5. O que Camilo encontrou no labirinto vivo?
+a) Um caminho direto para a escola.
+b) Luna, que também atravessava a floresta.
+c) Um grupo de pássaros gigantes em revoada.
+d) Um esquilo com um mapa mágico.
+Resposta correta: b
+
+
+6. Como Camilo e Luna enfrentaram os pássaros gigantes que atacavam em revoada?
+a) Camilo usou cálculos rápidos para prever as trajetórias e Luna usou uma funda.
+b) Camilo usou um espelho para distraí-los.
+c) Camilo e Luna se esconderam até os pássaros partirem.
+d) Criaram uma armadilha usando galhos e folhas.
+Resposta correta: a
+
+
+7. Qual habilidade Camilo desenvolveu que o ajudou a superar desafios na floresta?
+a) Combate físico.
+b) Gestão do tempo, análise de padrões e cálculo matemático.
+c) Domar monstros gigantes.
+d) Controle sobre o clima da floresta.
+Resposta correta: b
+
+
+8. O que simbolizou a formação de Camilo na faculdade?
+a) Sua coragem para enfrentar a floresta.
+b) A aplicação prática da contabilidade e auditoria em sua jornada.
+c) Seu esforço em ajudar outros a atravessar a floresta.
+d) A união com Luna para alcançar o sucesso.
+Resposta correta: b
+
+
+9. O que Camilo destacou em seu discurso de formatura?
+a) Que os monstros da floresta eram mais fáceis de enfrentar do que a universidade.
+b) Que a contabilidade e o planejamento o ajudaram a superar qualquer desafio.
+c) Que Luna foi a chave de seu sucesso.
+d) Que ele nunca voltaria à floresta.
+Resposta correta: b
+
+
+10. Qual foi o principal ensinamento da história de Camilo?
+a) Evitar florestas perigosas a todo custo.
+b) A união faz a força em tempos difíceis.
+c) Planejamento, coragem e análise podem superar qualquer desafio.
+d) A contabilidade é uma ferramenta apenas para a vida acadêmica.
+Resposta correta: c
+
+
+
+
+
+
+
+
+
         question: "O que o fazendeiro encontrou no galinheiro?",
         options: ["Uma galinha nova", "Um ovo de prata", "Um ovo de ouro", "Um saco de dinheiro"],
         correctAnswer: 2
