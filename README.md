@@ -924,22 +924,31 @@ question: "Qual era o principal objetivo de Camilo ao atravessar a floresta diar
       options: ["Buscar frutas raras para vender", "Ir à escola para realizar o sonho de ser contador e Auditor", "Explorar a floresta para escrever um livro", "Fugir da vila Serenidade"],
       correctAnswer: 1
       },
+{
 
       question: "O que Camilo usou para assustar o monstro no primeiro dia?",
       options: ["Uma pedra", "Uma sombra projetada pela lanterna", "Um grito alto", "Um esquema financeiro"],
       correctAnswer: 1
+}, 
+{
 
 question: "Como Camilo conseguiu atravessar o rio bloqueado pela serpente gigante?", 
 options: ["Pulando diretamente sobre a serpente", "Usando um barco improvisado", "Jogando pedras para distraí-la e calculando a trajetória segura", "Chamando ajuda dos macaco"], 
 correctAnswer: 2
+}, 
+{
 
 queation: "Qual foi a primeira aliança formada por Camilo na floresta?", 
 options: ["Com Luna, a garota corajosa", "Com macacos que o ajudaram a identificar perigos", "Com um esquilo que o guiou", "Com o monstro rochoso"],
 correctAnswer: 1
+}, 
+{
 
 question: "O que Camilo encontrou no labirinto vivo", 
 options: ["Um caminho direto para a escola", "Luna, que também atravessava a floresta", "Um grupo de pássaros gigantes em revoada", "Um esquilo com um mapa mágico"], 
 correctAnswer: 1
+}, 
+{
 
       question: "Qual foi o principal ensinamento da história de Camilo?" 
       options: ["Evitar florestas perigosas a todo custo", "A união faz a força em tempos difíceis", "Planejamento, coragem e análise podem superar qualquer desafio", "A contabilidade é uma ferramenta apenas para a vida académica"], 
