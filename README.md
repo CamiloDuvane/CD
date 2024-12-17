@@ -921,130 +921,29 @@ Durante o discurso, Camilo disse: “A contabilidade me salvou da floresta, e os
     quiz: [
       {
 question: "Qual era o principal objetivo de Camilo ao atravessar a floresta diariamente?",
-        options: ["Buscar frutas raras para vender", "Ir à escola para realizar o sonho de ser contador e Auditor", "Explorar a floresta para escrever um livro", "Fugir da vila Serenidade"],
-        correctAnswer: 1
+      options: ["Buscar frutas raras para vender", "Ir à escola para realizar o sonho de ser contador e Auditor", "Explorar a floresta para escrever um livro", "Fugir da vila Serenidade"],
+      correctAnswer: 1
       },
 
-question: "O que Camilo usou para assustar o monstro no primeiro dia?",
-options: ["Uma pedra", "Uma sombra projetada pela lanterna", "Um grito alto", "Um esquema financeiro"],
-correctAnswer: 1
-
+      question: "O que Camilo usou para assustar o monstro no primeiro dia?",
+      options: ["Uma pedra", "Uma sombra projetada pela lanterna", "Um grito alto", "Um esquema financeiro"],
+      correctAnswer: 1
 
 question: "Como Camilo conseguiu atravessar o rio bloqueado pela serpente gigante?", 
 options: ["Pulando diretamente sobre a serpente", "Usando um barco improvisado", "Jogando pedras para distraí-la e calculando a trajetória segura", "Chamando ajuda dos macaco"], 
 correctAnswer: 2
 
-queation: ["Qual foi a primeira aliança formada por Camilo na floresta?
-a) Com Luna, a garota corajosa.
-b) Com macacos que o ajudaram a identificar perigos.
-c) Com um esquilo que o guiou.
-d) Com o monstro rochoso.
-Resposta correta: b
+queation: "Qual foi a primeira aliança formada por Camilo na floresta?", 
+options: ["Com Luna, a garota corajosa", "Com macacos que o ajudaram a identificar perigos", "Com um esquilo que o guiou", "Com o monstro rochoso"],
+correctAnswer: 1
 
+question: "O que Camilo encontrou no labirinto vivo", 
+options: ["Um caminho direto para a escola", "Luna, que também atravessava a floresta", "Um grupo de pássaros gigantes em revoada", "Um esquilo com um mapa mágico"], 
+correctAnswer: 1
 
-5. O que Camilo encontrou no labirinto vivo?
-a) Um caminho direto para a escola.
-b) Luna, que também atravessava a floresta.
-c) Um grupo de pássaros gigantes em revoada.
-d) Um esquilo com um mapa mágico.
-Resposta correta: b
-
-
-6. Como Camilo e Luna enfrentaram os pássaros gigantes que atacavam em revoada?
-a) Camilo usou cálculos rápidos para prever as trajetórias e Luna usou uma funda.
-b) Camilo usou um espelho para distraí-los.
-c) Camilo e Luna se esconderam até os pássaros partirem.
-d) Criaram uma armadilha usando galhos e folhas.
-Resposta correta: a
-
-
-7. Qual habilidade Camilo desenvolveu que o ajudou a superar desafios na floresta?
-a) Combate físico.
-b) Gestão do tempo, análise de padrões e cálculo matemático.
-c) Domar monstros gigantes.
-d) Controle sobre o clima da floresta.
-Resposta correta: b
-
-
-8. O que simbolizou a formação de Camilo na faculdade?
-a) Sua coragem para enfrentar a floresta.
-b) A aplicação prática da contabilidade e auditoria em sua jornada.
-c) Seu esforço em ajudar outros a atravessar a floresta.
-d) A união com Luna para alcançar o sucesso.
-Resposta correta: b
-
-
-9. O que Camilo destacou em seu discurso de formatura?
-a) Que os monstros da floresta eram mais fáceis de enfrentar do que a universidade.
-b) Que a contabilidade e o planejamento o ajudaram a superar qualquer desafio.
-c) Que Luna foi a chave de seu sucesso.
-d) Que ele nunca voltaria à floresta.
-Resposta correta: b
-
-
-10. Qual foi o principal ensinamento da história de Camilo?
-a) Evitar florestas perigosas a todo custo.
-b) A união faz a força em tempos difíceis.
-c) Planejamento, coragem e análise podem superar qualquer desafio.
-d) A contabilidade é uma ferramenta apenas para a vida acadêmica.
-Resposta correta: c
-
-
-
-
-
-
-
-
-
-        question: "O que o fazendeiro encontrou no galinheiro?",
-        options: ["Uma galinha nova", "Um ovo de prata", "Um ovo de ouro", "Um saco de dinheiro"],
-        correctAnswer: 2
-      },
-      {
-        question: "O que o fazendeiro planejava fazer com o ovo de ouro?",
-        options: ["Construir uma casa", "Comprar o maior trator do mundo", "Vender a fazenda", "Guardar o ovo como lembrança"],
-        correctAnswer: 1
-      },
-      {
-        question: "Como os ladrões planejavam roubar o ovo?",
-        options: ["Elaborando um plano com um mapa desenhado à mão", "Pedindo o ovo ao fazendeiro", "Comprando a galinha do fazendeiro", "Esperando a galinha botar outro ovo"],
-        correctAnswer: 0
-      },
-      {
-        question: "Quando os ladrões decidiram executar o plano?",
-        options: ["De manhã cedo", "À tarde", "Durante a noite", "No horário de almoço"],
-        correctAnswer: 2
-      },
-      {
-        question: "O que aconteceu quando os ladrões chegaram ao galinheiro?",
-        options: ["A galinha os atacou", "O fazendeiro os pegou", "Eles roubaram o ovo", "A galinha começou a cacarejar alto"],
-        correctAnswer: 3
-      },
-      {
-        question: "O que os ladrões fizeram quando ouviram a galinha cacarejar?",
-        options: ["Pegaram a galinha e correram", "Fugiram em pânico", "Se esconderam no galinheiro", "Gritaram por ajuda"],
-        correctAnswer: 1
-      },
-      {
-        question: "Onde os ladrões se esconderam após fugirem do galinheiro?",
-        options: ["No celeiro", "Dentro do galinheiro", "Atrás de arbustos", "Na casa do fazendeiro"],
-        correctAnswer: 2
-      },   
-      {
-        question: "O fazendeiro percebeu o plano dos ladrões?",
-        options: ["Não", "Sim, ele os pegou", "Sim, mas não fez nada", "Sim, e correu atrás deles"],
-        correctAnswer: 0
-      },
-      {
-        question: "O que o fazendeiro fez na manhã seguinte?",
-        options: ["Ele voltou ao galinheiro, acariciou a galinha e levou outro ovo para casa", "Ele descobriu o plano dos ladrões", "Ele vendeu a galinha", "Ele trancou o galinheiro"],
-        correctAnswer: 0
-      },
-     {
-        question: "Como a história termina para os ladrões?",
-        options: ["Conseguem roubar o ovo", "São presos pelo fazendeiro", "Se tornam amigos do fazendeiro", "Fugiram sem o ovo e com o plano fracassado"],
-        correctAnswer: 3
+      question: "Qual foi o principal ensinamento da história de Camilo?" 
+      options: ["Evitar florestas perigosas a todo custo", "A união faz a força em tempos difíceis", "Planejamento, coragem e análise podem superar qualquer desafio", "A contabilidade é uma ferramenta apenas para a vida académica"], 
+      correctAnswer: 2
       }
     ]
   },
