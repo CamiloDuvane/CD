@@ -2,6 +2,8 @@ import { GameState } from './gameState.js';
 import { CamiloAI } from './camiloAI.js';
 import { UI } from './ui.js';
 import { Validator } from './validator.js';
+import { collection, addDoc, getDocs, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
+
 
 class Game {
   constructor() {
